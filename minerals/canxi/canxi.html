@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Medicine-Foods</title>
+        <link rel="stylesheet" href="./../../BootStrap 5.0/css 5.0/bootstrap.min.css">
+        <link rel="stylesheet" href="canxi.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./../../image/logo-footer.png" />
+      </head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+          <div style="padding-top: 0px; padding-bottom: 0px;" class="container-fluid">
+            <!-- home -->
+            <div style="margin-left: 150px; display: flex;">
+              <div style="margin-top: 2px;">
+                <a href="./../../HomePage/HomePage.html"><img style="padding-top: 5px;" src="./../../image/logo-footer.png" id="LogoHeader"  width="74px" height="75px" alt=""></a>
+              </div>
+              <div>
+                <h4 style="margin-top: 18px; color: rgb(190, 79, 0); margin-left: 9px; text-align: center; line-height: 24px;">
+                  <a style="text-decoration: none;" href="./../../HomePage/HomePage.html">Medicine-Foods</a><br>
+                  <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+                </h4>
+              </div>
+            </div>
+              <div style="margin-left: 250px;">
+                <div style="height: auto; border-bottom: 0.1px solid black;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- contact -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../contact/contact.html"><b>Contact</b></a>
+                    </li>
+                    <!-- Review -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../gallery/gallery.html"><b>Gallery</b></a>
+                    </li>
+                    <!-- search -->
+                    <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                      <form class="d-flex" onsubmit="return redirect();">
+                        <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                          placeholder="Search" aria-label="Search">
+                        <button style="border-color: transparent;" class="btn btn-outline-success" type="submit"><i
+                            style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search"
+                            aria-hidden="true"></i></button>
+                      </form>
+                    </div>
+                  </ul>
+                </div>
+                <div style="height: auto;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- vitamin -->
+                    <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                      </a>
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin A/VitaminA.html">Vitamin A</a></li>
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin B/VitaminB.html">Vitamin B</a></li>
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin C/VitaminC.html">Vitamin C</a></li>
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin D/VitaminD.html">Vitamin D</a></li>
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin E/VitaminE.html">Vitamin E</a></li>
+                        <li><a class="dropdown-item" href="./../../vitamin/vitamin K/VitaminK.html">Vitamin K</a></li>
+                      </ul>
+                    </li>
+                    <!-- minerals -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                      </a>
+                      <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./../Axit folic/folic.html">Axit Folic</a></li>
+                        <li><a class="dropdown-item" href="./../canxi/canxi.html">Canxi</a></li>
+                        <li><a class="dropdown-item" href="./../sat Fe/Fe.html">Sắt - Fe</a></li>
+                        <li><a class="dropdown-item" href="./../Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                        <li><a class="dropdown-item" href="./../Crom Cr/crom.html">Crôm - Cr</a></li>
+                      </ul>
+                    </li>
+                    <!-- buy medicine -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                      </a>
+                      <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                        <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                        <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                        <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- main -->
+    <main>
+      <!-- hình đầu -->
+      <!-- <div>
+        <img style="position: absolute;" src="./../../image/vitaminAIMGdau.jpg" width="100%" alt="">
+        <div class="ChuVitaminA">
+          <img style="margin: 20px 0px 0px 200px" src="./../../image/vitamin_A-removebg-preview.png" width="40%" alt="">
+          <ul style="margin: 20px 0px 0px 130px;">
+            <li class="LiHinhDau"><h3 style="font-weight: 400;"> Vai trò tăng trưởng</h3></li>
+            <li class="LiHinhDau"><h3 style="font-weight: 400;"> Chức năng thị giác</h3></li>
+            <li class="LiHinhDau"><h3 style="font-weight: 400;"> Bảo vệ biểu mô</h3></li>
+            <li class="LiHinhDau"><h3 style="font-weight: 400;"> Tạo miễn dịch cơ thể</h3></li>
+          </ul>
+        </div>
+      </div> -->
+    <!-- button scroll top -->
+    <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+    <img src="./../../image/top (1).png" onclick="toTop()" id="top"> 
+
+
+
+      <!-- hình đầu -->
+      <div class="imgFirst">
+        <img src="./../../image/phomainCANXI1.jpg" width="100%" height="400px" alt="">
+        <h1>CANXI</h1>
+      </div>
+      <!-- thanh xám ô button -->
+      <div style="padding-top: 78px;">
+         <div class="H3Div" style="background-color: rgba(66, 66, 66, 0.856); display: flex;">
+            <!-- 1 -->
+            <div style="margin-left: 51px;">
+              <h5><a href="#What">Canxi là gì?</a></h5>
+            </div>
+            <!-- 2 -->
+            <div>
+              <h5><a href="#CongDung">Công dụng</a></h5>
+            </div>
+            <!-- 3 -->
+            <div>
+              <h5><a href="#NhuCau">Nhu cầu</a></h5>
+            </div>
+            <!-- 4 -->
+            <div>
+              <h5><a href="#CacVanDe">Các vấn đề thường gặp</a></h5>
+            </div>
+            <!-- 5 -->
+            <div>
+              <h5><a href="#LuuY">Những vấn đề cần lưu ý</a></h5>
+            </div>
+            <!-- 6 -->
+            <div style="margin-left: 240px;">
+              <h5 style="color: rgb(212, 31, 31);"><a style="color: rgb(214, 30, 30);" href="#ReadMore"><b>READ MORE</b></a> <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+            </div>   
+         </div>
+      </div>
+      <!-- nội dung -->
+      <!-- div bên trái -->
+      <div style="display: flex; margin-top: 35px;">
+        <div style="width: 65%; margin-left: 50px; padding-right: 12px;">
+          <!-- vitamin A là gì -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 32px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877); padding-bottom: 2px;">CANXI là gì ?</strong></h5>
+          <p><strong style="color: red;">CANXI </strong> 
+            hay Vitamin B9 hay Folacin hay Folat là các dạng hòa tan trong nước của vitamin B9, cần thiết và quan trọng trong chế độ dinh dưỡng hằng ngày của cơ thể người, đặc biệt là ở phụ nữ mang thai và trẻ sơ sinh để phục vụ các quá trình tạo mới tế bào, giúp các tế bào tăng trưởng và phát triển.<BR>
+            <strong style="color: red;">AXIT-FOLIC </strong> có ở đâu?<br>
+            <strong style="color: red;">AXIT-FOLIC </strong> có mặt tự nhiên trong thức ăn và cũng có thể thu từ thuốc uống bổ trợ. Những thực phẩm có nguồn axit folic dồi dào bao gồm:<br>
+            <ul style="margin-top: -10px;">
+              <li>Các loại rau như rau chân vịt, rau diếp cá, đậu bắp, măng tây, củ cải, bông cải xanh, cải bruxen và rau bina cùng các loại  hạt như đậu khô, đậu hà lan hay men, nấm.</li>
+              <li>Trái cây như chuối, dưa gang, chanh, nước ép cam, bưởi.</li>
+              <li>Gan và thận bò.</li>
+              <li>Ngoài ra các nhà sản xuất thường thêm axit folic vào trong các loại thực phẩm như sữa, ngũ cốc, bột mì, bánh mì, mì ống, nguyên liệu làm bánh, bánh quy, bánh cookie.</li>
+            </ul>
+          </p>
+          <!-- Công dụng -->
+          <h5 id="CongDung" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 32px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877); padding-bottom: 2px;">Công dụng của AXIT-FOLIC</strong></h5>
+          <p>
+            Tác dụng của axit folic đối với cơ thể là giúp sản xuất và duy trì các tế bào mới và đồng thời giúp ngăn ngừa những thay đổi ở DNA có thể dẫn đến ung thư. Axit folic được sử dụng như một loại thuốc điều trị chứng thiếu axit folic và một số loại bệnh thiếu máu (thiếu các tế bào hồng cầu) gây ra do thiếu hụt axit folic. Axit folic đôi khi được dùng kết hợp với các thuốc khác để điều trị bệnh thiếu máu ác tính. Tuy nhiên thuốc không thể điều trị bệnh thiếu vitamin B12 và không ngăn chặn chứng tổn thương tủy sống có thể xảy ra.
+          </p>
+          <p style="color: rgba(184, 218, 35, 0.829);">
+            Vai trò của axit folic trong thai kỳ
+          </p>
+          <ul style="margin-top: -12px;">
+            <li>Giảm nguy cơ ung thư: Axit folic có thể giảm một tỷ lệ nhỏ nguy cơ mắc các bệnh liên quan đến ung thư, ví dụ như bệnh ung thư vú. Một số người sử dụng axit folic để ngăn ngừa bệnh ung thư ruột kết hoặc ung thư cổ tử cung. Nó được dùng để ngăn ngừa bệnh tim, đột quỵ cũng như giảm mức độ hóa chất trong máu (tan huyết tố). Tuy nhiên, những giả thuyết này đang gặp phải rất nhiều tranh luận và chưa thể đưa ra được kết luận chính xác.</li>
+            <li>Ngăn chặn một số bệnh lý khác: Axit folic còn được sử dụng cho chứng mất trí nhớ, bệnh mất trí, nghe kém do tuổi tác, giảm dấu hiệu lão hóa, xương yếu (loãng xương), chân bồn chồn, khó ngủ, trầm cảm, đau thần kinh, đau cơ bắp, AIDS, bệnh bạch biến và hội chứng Fragile-X.</li>
+            <li>Phòng tránh bệnh thiếu máu: Axit folic đóng một vai trò hết sức quan trọng trong việc cung cấp các tế bào máu cho cơ thể, chúng giúp tạo ra các tế bào mới, bao gồm hồng cầu nên cần bổ sung đầy đủ axit folic cho mẹ bầu và thai nhi để ngăn được tình trạng thiếu máu, tránh xảy ra các trường hợp sảy thai, sinh non, dễ mắc chứng rối loạn tâm thần sau sinh, suy dinh dưỡng bào thai hoặc trẻ mới sinh ra mắc các bệnh về tim mạch, hở hàm ếch nếu mẹ thiếu axit folic nghiêm trọng.</li>
+            <li>Ngăn ngừa khuyết tật bẩm sinh: Trong thời kỳ mang thai, não và tủy sống của bé đã được hình thành trong tử cung nên việc bổ sung đủ lượng axit folic vào thời điểm quan trọng này sẽ giúp thai nhi phát triển bình thường và khỏe mạnh, ngăn ngừa các khuyết tật bẩm sinh nghiêm trọng ở não và tủy sống như khiếm khuyết ở ống thần kinh (NTDs), nứt đốt sống hoặc có thể sinh ra thiếu một phần não bộ.</li>
+          </ul>
+          </p>
+          <!-- nhu cầu -->
+          <h5 id="NhuCau" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 32px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877); padding-bottom: 2px;">NHU CẦU</strong></h5>
+          <p style="color: rgba(184, 218, 35, 0.829);">
+            Axit folic có những dạng và hàm lượng sau:
+          </p>
+          <ul style="margin-top: -12px;">
+            <li>Viên nang, thuốc uống: 5 mg, 20 mg.</li>
+            <li>Dung dịch, thuốc tiêm, như sodium folate: 5 mg/mL.</li>
+            <li>Viên nén, thuốc uống: 400 mcg, 800 mcg, 1 mg.</li>
+            <li>Viên nén, thuốc uống [không chất bảo quản]: 400 mcg, 800 mcg.</li>
+          </ul>
+          <p style="color: rgba(184, 218, 35, 0.829);">
+            Đối với phụ nữ mang thai:
+          </p>
+          <ul style="margin-top: -12px;">
+            <li>Phụ nữ đang chuẩn bị mang thai: 400 mg/ngay.</li>
+            <li>Phụ nữ có thai: 600 mg/ngay.</li>
+            <li>Phữ nữ cho con bú: 500 mg/ngay.</li>
+          </ul>
+          <!-- CÁC VẤN ĐỀ THƯỜNG GẶP -->
+          <h5 id="CacVanDe" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 32.5px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877); padding-bottom: 2px;">CÁC VẤN ĐỀ THƯỜNG GẶP</strong></h5>
+          <p><strong style="color: red;">AXIT-FOLIC</strong>
+            có thể gây ra bệnh gì?
+            <div style="display: flex;">
+              <div style="width: 38%;">
+                <strong style="color: rgba(184, 218, 35, 0.829); font-size: 21px; font-weight: 600;">Thiếu AXIT-FOLIC:</strong><br>
+                <ul class="VanDeLi">
+                  <li>Trầm cảm, khó tập trung, dễ quên, cáu kỉnh, sa sút trí nhớ.</li>
+                  <li>Buồn nôn, đau bụng và tiêu chảy, chán ăn kéo dài.</li>
+                  <li>Đau nhức cơ thể.</li>
+                  <li>Da nhợt nhạt.</li>
+                  <li>Khó thở.</li>
+                  <li>Bệnh Scorbut.</li>
+                  <li>Loét miệng, sưng lưỡi.</li>
+                  <li>Giảm vị giác.</li>
+                  <li>Xơ vữa động mạch.</li>
+                  <li>Alzheimer.</li>
+                </ul>
+              </div>
+              <div style="width: 45%; border-left: 0.5px solid rgba(167, 167, 167, 0.336);">
+                <strong style="color: rgba(184, 218, 35, 0.829); font-size: 21px; font-weight: 600; margin-left: 60px;">Thừa AXIT-FOLIC:</strong><br>
+                <ul class="VanDeLi" style="margin-left: 60px;">
+                  <li>Lượng acid folic cao có thể che giấu sự thiếu hụt vitamin B12.</li>
+                  <li>Đẩy nhanh quá trình lão hóa của các tế bào thần kinh.</li>
+                  <li>Kìm hãm sự phát triển não bộ của trẻ.</li>
+                  <li>Tăng khả năng phát triển của các khối u.</li>
+                </ul>
+              </div>
+            </div>
+          </p>
+          <!-- những vấn đề cần lưu ý -->
+          <h5 id="LuuY" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 32px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877); padding-bottom: 2px;">NHỮNG VẤN ĐỀ CẦN LƯU Ý</strong></h5>
+          <p style="color: rgba(184, 218, 35, 0.829);">
+            Khi sử dụng vitamin axit folic cần lưu ý
+            <ul style="margin-top: -12px;">
+              <li>Nên uống axit folic giữa 2 bữa ăn.</li>
+              <li>Vitamin C sẽ làm tăng hấp thu sắt. Do đó bạn hãy uống viên sắt – axit folic chung với nước cam hoặc nước trái cây.</li>
+              <li>Tránh uống thuốc với nước trà, cà phê, rượu vì axit folic sẽ làm giảm khả năng hấp thu.</li>
+              <li>Uống axit folic thường hay bị táo bón nên cần uống nhiều nước và ăn nhiều chất xơ.</li>
+              <li>Nên dùng axit folic một cách chính xác theo quy định của bác sĩ. Không dùng với số lượng lớn hơn hoặc lâu hơn so với quy định. Thực hiện theo các hướng dẫn trên nhãn thuốc. Uống axit folic với nhiều nước. Bác sĩ đôi khi có thể thay đổi liều lượng để chắc chắn thuốc phát huy hiệu quả tốt nhất cho bạn. Báo với bác sĩ nếu tình trạng bệnh của bạn không thuyên giảm hoặc trở nên nặng hơn.</li>
+            </ul>
+          </p>
+        </div>
+
+        <!-- div bên phải -->
+        <!-- quảng cáo, đọc thêm -->
+        <div style="width: 30%; border-left: 1px solid rgba(182, 182, 182, 0.322);">
+          <!-- liên quan 1 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/axitfolic1.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: rgba(0, 119, 216, 0.952);" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Bạch cầu tế bào tóc là gì?</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Bạch cầu tế bào tóc là một loại ung thư máu hiếm gặp khi tủy xương tạo ra quá nhiều tế bào lympho B...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -5.2px; width: 88%; margin-left: 32px; height: 1.6px; color: rgb(24, 209, 0);">
+
+          <!-- liên quan 2 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/qua-trinh-san-xuat-hong-cau-dien-ra-nao/?link_type=related_posts"><img src="./../../image/axitfolic4.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: rgba(0, 119, 216, 0.952);" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/qua-trinh-san-xuat-hong-cau-dien-ra-nao/?link_type=related_posts">Quá trình sản xuất hồng cầu diễn ra thế nào?</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Hồng cầu là một trong 3 phần của tế bào - thành phần cùng với...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6.2px; width: 88%; margin-left: 32px; height: 1.5px; color: rgb(24, 209, 0);">
+
+          <!-- liên quan 3 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/te-bao-mau-sinh-ra-o-dau/?link_type=related_posts"><img src="./../../image/axitfolic3.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: rgba(0, 119, 216, 0.952);" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/te-bao-mau-sinh-ra-o-dau/?link_type=related_posts">Tế bào máu sinh ra ở đâu?</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Máu là một mô lỏng và lưu thông trong hệ thống tuần hoàn của cả cơ thể. Máu có chức năng Máu tham gia...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -5.1px; width: 88%; margin-left: 32px; height: 1.5px; color: rgb(24, 209, 0);">
+
+          <!-- liên quan 4 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 101px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/vai-tro-cua-xet-nghiem-tuy-do/?link_type=related_posts"><img src="./../../image/axitfolic2.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: rgba(0, 119, 216, 0.952);" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/vai-tro-cua-xet-nghiem-tuy-do/?link_type=related_posts">Vai trò của xét nghiệm tủy đồ</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Xét nghiệm tủy đồ là loại xét nghiệm lấy ra một lượng nhỏ dịch và...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6px; width: 88%; margin-left: 32px; height: 1.5px; color: rgb(24, 209, 0);">
+
+
+          <!-- liên quan 5 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 101px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/ung-buou-xa-tri/thong-tin-suc-khoe/cac-yeu-nguy-co-cua-ung-thu-mau/?link_type=related_posts"><img src="./../../image/axitfolic5.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: rgba(0, 119, 216, 0.952);" href="https://www.vinmec.com/vi/ung-buou-xa-tri/thong-tin-suc-khoe/cac-yeu-nguy-co-cua-ung-thu-mau/?link_type=related_posts">Các yếu tố nguy cơ của ung thư máu</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Bệnh bạch cầu là ung thư của các mô tạo máu của cơ thể...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6.8px; width: 88%; margin-left: 32px; height: 1.5px; color: rgb(24, 209, 0);">
+
+          <!-- thẻ hr -->
+          <hr style="width: 95%; margin-left: 20px; color: rgba(184, 184, 184, 0.829);">
+          
+          <!-- Dsach các bài viết liên quan -->
+          <img style="margin-left: 90px;" src="./../../image/AXITFOLIC.png" width="60%" alt="">
+          <div id="ReadMore" class="LienQuan">
+              <h5 class="hello" style="margin: 10px;"><i class="fa fa-list-ul" aria-hidden="true"></i> <strong style="color: rgba(222, 238, 0, 0.897); font-weight: 500;">Danh sách các bài viết liên quan.</strong> </h5>
+              <!-- 1 -->
+              <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid  rgba(175, 175, 175, 0.616); border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                  <a href="https://www.vinmec.com/vi/vrisg/suc-khoe-thuong-thuc/te-bao-goc-tuy-xuong-la-gi-ung-dung-cua-te-bao-goc-tuy-xuong/?link_type=related_posts">
+                    Tế bào gốc tủy xương là gì? Ứng dụng của tế bào gốc tủy xương
+                  </a> 
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid  rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/co-xuong-khop/suc-khoe-thuong-thuc/chup-mri-khop-co-chan-duoc-chi-dinh-trong-truong-hop-nao/?link_type=related_posts"> 
+                    Chụp MRI khớp cổ chân được chỉ định trong trường hợp nào?
+                  </a>
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/cach-doc-ket-qua-chup-cong-huong-tu-mri-cot-song-co/?link_type=related_posts">
+                    Cách đọc kết quả chụp cộng hưởng từ (MRI) cột sống cổ
+                  </a>
+                </p>
+              </div>
+              <!-- 4 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/vrisg/suc-khoe-thuong-thuc/ung-dung-te-bao-goc-trung-mo-tu-trong-dieu-tri-seo-sau-bong-nghien-cuu-so-bo/?link_type=related_posts">
+                    Ứng dụng tế bào gốc trung mô tự thân trong điều trị sẹo sau bỏng: Nghiên cứu sơ bộ
+                  </a>
+                </p>
+              </div>
+              <!-- 5 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/vrisg/tin-tuc-hoat-dong/du-an-nghien-cuu-ve-tbg-va-cng-dang-trien-khai/thu-nghiem-lam-sang-ngau-nhien-co-nhom-chung-danh-gia-ket-qua-ghep-te-bao-goc-trung-mo-tu-tu-tuy-xuong-trong-dieu-tri-dot-quy/?link_type=related_posts">
+                    Thử nghiệm lâm sàng ngẫu nhiên có nhóm chứng
+                  </a>
+                </p>
+              </div>
+              <!-- 6 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/benh-zona-than-kinh-co-lay-khong/?link_type=related_posts">
+                    Bệnh zona thần kinh có lây không?
+                  </a>
+                </p>
+              </div>
+              <!-- 7 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/vrisg/suc-khoe-thuong-thuc/thu-thap-dich-tuy-xuong-de-phan-lap-te-bao-goc-xu-ly-te-bao-xuong/?link_type=related_posts">
+                    Thu thập dịch tủy xương để phân lập tế bào gốc (xử lý tế bào xương)
+                  </a>
+                </p>
+              </div>
+              <!-- 8 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.616);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/qua-trinh-san-xuat-hong-cau-dien-ra-nao/?link_type=related_posts">
+                    Quá trình sản xuất hồng cầu diễn ra thế nào?
+                  </a>
+                </p>
+              </div>
+              <!-- 9 -->
+              <div class="DSachLquan" style="width: 90%;">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/vai-tro-cua-xet-nghiem-tuy-do/?link_type=related_posts">
+                    Vai trò của xét nghiệm tủy đồ
+                  </a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </main>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <footer class="ftco-footer">
+      <div class="container mb-5 pb-4">
+          <div class="row">
+              <div class="col-lg col-md-6">
+                  <div style="width: 350px;" class="ftco-footer-widget ">
+                      <h3 class="logo"><a style="text-decoration: none;" href="./../../HomePage/HomePage.html"><img src="./../../image/logo-footer.png"> Medicine-Foods</a></h3>
+                      <p>The website provides information about what to eat and do when you are sick.</p>
+                      <ul class="ftco-footer-social list-unstyled mt-4 ">
+                          <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                          <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Links</h2>
+                      <ul class="list-unstyled ">
+                          <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></i></li>
+                          <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/" target="_blank">Instagram</a></i></li>
+                          <li><i class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi" target="_blank">Twitter</a></i></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Services</h2>
+                      <div id="ServicesFooter">
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a  href="#" class="medicine" onclick="BuyMedicine();" >Buy-Medicine</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../contact/contact.html">Contact</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../gallery/gallery.html">Gallery</a></i></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                <div class="ftco-footer-widget ">
+                    <h2 class="ftco-heading-2">Informations</h2>
+                    <ul class="list-unstyled ">
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097" target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+                      </li>
+                      <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                          <br>
+                          <a style="margin-left: 27px;"
+                            href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                            target="_blank">nhthanh.20it7@vku.udn.vn</a>
+                          <br>
+                          <a style="margin-left: 14px;"
+                            href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                            target="_blank">nqnphuong.20it@vku.udn.vn</a>
+                            <br>
+                          <a style="margin-left: 44px;" href="https://mail.google.com/mail/u/1/#inbox" target="_blank">ttphuc.20it6@vku.udn.vn</a>   
+                        </i>
+                      </li>  
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- add js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./../../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+    <script src="canxi.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+</html>

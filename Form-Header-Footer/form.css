@@ -1,0 +1,194 @@
+/* phần header */
+*{
+    margin: 0 auto;
+}
+body{
+    background-color: rgba(187, 207, 223, 0.247) !important;
+}
+.header{
+    border: 0px solid rgba(87, 87, 87, 0.815);
+    /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.877); */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+}
+.bg-light{
+    background-color: rgba(184, 210, 218, 0.815);
+}
+.navbar{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /* padding-top:.5rem;
+    padding-bottom:.5rem; */
+}
+/* .navbar-nav li:hover{
+    font-size: 23px;
+} */
+.nav-link b{
+    font-size: 15px;
+}
+/* .nav-link b:hover{
+    color: rgb(0, 0, 0) !important;
+} */
+/* .btn i:hover{
+    font-size: 28px;
+} */
+/* auto dropdown */
+#navbarSupportedContent li:hover .dropdown-menu{
+    display: block;
+}
+.NameLogoHeader{
+    font-size: 15px; 
+    text-align: right;
+    color: rgb(184, 138, 78);
+    filter: drop-shadow(0 0 2px rgba(194, 156, 107, 0.651));
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* phần footer */
+.col-md-6{
+    text-align: center;
+}
+.logo img{
+    width: 90px;
+    height: 92px;
+    margin-right: 0px;
+    filter: drop-shadow(0 0 5px rgb(122, 0, 0));
+}
+.ftco-footer {
+    font-size: 16px;
+    background: #141414;
+    padding: 7em 0 0;
+    z-index: 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden
+}
+.ftco-footer:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 58%;
+    content: '';
+    background: rgba(255, 255, 255, .03);
+    -webkit-transform: matrix(1, 0, .5, 1, 150, 0);
+    -ms-transform: matrix(1, 0, .5, 1, 150, 0);
+    transform: matrix(1, 0, .5, 1, 150, 0);
+    z-index: -1
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.ftco-footer .ftco-footer-widget ul {
+    margin: 0;
+    padding: 0
+}
+.ftco-footer .ftco-footer-widget ul li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, .5)
+}
+.ftco-footer .ftco-footer-widget ul li a {
+    color: rgba(255, 255, 255, .5)
+}
+.ftco-footer .ftco-footer-widget ul li a span {
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px
+}
+.ftco-footer .ftco-footer-widget ul li a:hover {
+    color: #ffa931
+}
+.ftco-footer-widget p{
+    margin-top: 35px;
+}
+.ftco-footer-widget h2{
+    color: #c7b08f !important;
+}
+.ftco-footer a {
+    color: rgba(0, 0, 0, .7);
+    color: #ffa931
+}
+.ftco-footer p{
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+.ftco-footer a:hover {
+    color: #fff
+}
+.ftco-footer .ftco-heading-2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.ftco-footer .logo a {
+    color: #ffa931
+}
+.ftco-footer .logo a span.flaticon {
+    font-size: 24px;
+    line-height: 1
+}
+.ftco-footer .bg-primary {
+    background: #111!important;
+    position: relative;
+    z-index: 0
+}
+.ftco-footer .bg-primary p {
+    color: rgba(255, 255, 255, .7);
+}
+.ftco-footer .bg-primary p a {
+    color: #fff;
+    text-decoration: underline
+}
+.ftco-footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block
+}
+.ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #ffa931;
+    position: relative;
+    border-radius: 4px
+}
+.ftco-footer-social li a span {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff!important
+}
+.list-unstyled li{
+    font-size: 19px;
+    line-height: 50px;
+}
+.list-unstyled a{
+    text-decoration: none; /* xóa bỏ gạch chân of link */
+    margin-left: 9px;
+}
+.nav-item{
+    margin-left: 45px;
+    font-size: 21px;
+    margin-top: 2px;
+}
+
+

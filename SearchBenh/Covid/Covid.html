@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        
+        <title>Medicine-Foods</title>
+        <link rel="stylesheet" href="./../../BootStrap 5.0/css 5.0/bootstrap.min.css">
+        <link rel="stylesheet" href="Covid.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./../../image/logo-footer.png" />
+    </head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div style="padding-top: 0px; padding-bottom: 0px;" class="container-fluid">
+              <!-- home -->
+              <div style="margin-left: 150px; display: flex;">
+                <div style="margin-top: 1px;">
+                  <a href="./../../HomePage/HomePage.html"><img style="padding-top: 3px;" src="./../../image/logo-footer.png" id="LogoHeader" width="74px" height="75px" alt=""></a>
+                </div>
+                <div>
+                  <h4 style="margin-top: 18px; color: rgb(190, 79, 0); margin-left: 9px; text-align: center; line-height: 24px;">
+                    <a style="text-decoration: none;" href="./../../HomePage/HomePage.html">Medicine-Foods</a><br>
+                    <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+                  </h4>
+                </div>
+              </div>
+                <div style="margin-left: 250px;">
+                  <div style="height: auto; border-bottom: 0.1px solid black;">
+                    <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- contact -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./../../contact/contact.html"><b>Contact</b></a>
+                      </li>
+                      <!-- Review -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./../../gallery/gallery.html"><b>Gallery</b></a>
+                      </li>
+                      <!-- search -->
+                      <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                        <form class="d-flex" onsubmit="return redirect();">
+                          <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                          <button style="border-color: transparent;" class="btn btn-outline-success" type="submit"><i
+                              style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search"
+                              aria-hidden="true"></i></button>
+                        </form>
+                      </div>
+                    </ul>
+                  </div>
+                  <div style="height: auto;">
+                    <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- vitamin -->
+                      <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin A/VitaminA.html">Vitamin A</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin B/VitaminB.html">Vitamin B</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin C/VitaminC.html">Vitamin C</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin D/VitaminD.html">Vitamin D</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin E/VitaminE.html">Vitamin E</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin K/VitaminK.html">Vitamin K</a></li>
+                        </ul>
+                      </li>
+                      <!-- minerals -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                        </a>
+                        <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./../../minerals/Axit folic/folic.html">Axit Folic</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/canxi/canxi.html">Canxi</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/sat Fe/Fe.html">Sắt - Fe</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/Crom Cr/crom.html">Crôm - Cr</a></li>
+                        </ul>
+                      </li>
+                      <!-- buy medicine -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                        </a>
+                        <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                          <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                          <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                          <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- main -->
+    <main>
+    <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+    <img src="./../../image/top (1).png" onclick="toTop()" id="top">
+
+    <!-- IMG đầu của homepage -->
+    <div style="width: 100%;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <img class="img-responsive" src="./../../image/bgCOVID.jpg" width="100%" alt="">
+            <div class="overlay">
+                <h1>Virus-Corona</h1>
+                <p style="text-align: center; margin-top: -50px;">
+                    Tổ chức Y tế Thế giới (WHO) cho biết tên gọi chính thức của bệnh viêm đường hô hấp cấp do chủng mới của vi-rút corona (nCoV) là Covid 19. Tên gọi mới này gọi tắt của coronavirus disease 2019, theo các từ khóa “corona”, “virus”, “disease” (dịch bệnh) và 2019 là năm mà loại virus gây đại dịch này xuất hiện.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- thanh xám -->
+    <div class="H3Div" style="width: 100%; display: flex; background-color: rgba(216, 216, 216, 0.651); height: 48px;">
+        <!-- là gì -->
+        <div style="margin-left: 31px;">
+            <h5><a href="#What">Virus-Corona là gì?</a></h5>
+        </div>
+        <!-- dấu hiệu -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#DHieu">Dấu hiệu</a></h5>
+        </div>
+        <!-- Nên làm -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NLam">Nên làm</a></h5>
+        </div>
+        <!-- không nên làm -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NLam">Không nên làm</a></h5>
+        </div>
+        <!-- nên ăn -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NAn">Nên ăn</a></h5>
+        </div>
+        <!-- không nên ăn -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NAn">Không nên ăn</a></h5>
+        </div>
+        <!-- báo -->
+        <div style="margin-left: 250px;">
+            <h5 style="color: red;"><a style="color: red;" href="#ReadMore">TIN TỨC</a> <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+          </div>   
+    </div>
+    <!-- nội dung -->
+    <div style="display: flex;">
+        <!-- bên trái -->
+        <div style="width: 72%; padding: 15px 22px 0px 40px; margin: 17px 0px 20px 0px; border-right: 0.5px solid rgba(134, 134, 134, 0.301);">
+            <!-- virut-corona là gì -->
+            <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Virus-Corona là gì ?</strong></h5>
+            <p>
+                Bùng phát vào cuối tháng 12/2019, bắt nguồn từ một chợ hải sản ở Hồ Nam, Vũ Hán, miền Trung Trung Quốc, <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> ban đầu được xác nhận là một loại bệnh “viêm phổi lạ” hoặc “viêm phổi không rõ nguyên nhân”. Chỉ sau 100 ngày xuất hiện, đại dịch viêm đường hô hấp cấp do <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> đã nhanh chóng tác động tới các lĩnh vực kinh tế, xã hội, thị trường tài chính chao đảo, nền kinh tế toàn cầu rơi vào suy thoái với tỷ lệ thất nghiệp và nghèo đói chưa từng có trong lịch sử.
+            </p>
+            <p>              
+                Tên gọi <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> có nguồn gốc từ tiếng Latin, trong đó “corona” có nghĩa là “vương miện” hoặc “hào quang”. Virus này có những chiếc gai bao bọc bên ngoài, chúng tương tác với thụ thể trên tế bào, theo cơ chế tương tự chìa khóa và ổ khóa, từ đó cho phép virus xâm nhập vào bên trong.
+            </p>
+            <!-- 1 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">1. Covid 19 là gì? </strong><br>
+            <p>
+                Tổ chức Y tế Thế giới (WHO) cho biết tên gọi chính thức của bệnh viêm đường hô hấp cấp do chủng mới của <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> (nCoV) là Covid 19. Tên gọi mới này gọi tắt của coronavirus disease 2019, theo các từ khóa “corona”, “virus”, “disease” (dịch bệnh) và 2019 là năm mà loại virus gây đại dịch này xuất hiện.
+            </p>
+            <p>
+                Tháng 2/2020, Ủy ban quốc tế về phân loại Virus – International Committee on Taxonomy of Viruses (ICTV) chính thức đặt tên cho chủng mới của vi-rút corona là Sars-CoV-2. Đây là tên gọi khác với tên Covid 19 mà WHO đã chỉ định trước đó.
+            </p>
+            <p>
+                Các nhà khoa học đã tiến hành nghiên cứu và phân lập được một chủng <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> mới, được Tổ chức Y tế Thế giới (WHO) tạm thời gọi là 2019-nCoV có trình tự gen giống với Sars-CoV trước đây, với mức tương đồng lên tới 79,5%.
+            </p>
+            <!-- <img style="margin: 10px 0px 16px 90px; border-radius: 10px;" src="./../../image/corona2.jpg" width="80%" alt=""> <br> -->
+            <div style="display: flex;">
+              <img style="margin: -60px 0px -35px 60px;" src="./../../image/covid1.png" width="48%" alt="">
+              <img style="margin: 15px 0px 0px 40px;" src="./../../image/covid2.png" width="36%" height="35%" alt="">
+            </div>
+
+            <!-- 2 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">2. Virus corona chủng mới là gì? </strong><br>
+            <p>
+              <strong style="color: rgb(219, 0, 0);"> Virus Corona </strong> là một loại virus gây ra tình trạng nhiễm trùng trong mũi, xoang hoặc cổ họng. Có 7 loại virus Corona, trong đó, 4 loại không nguy hiểm là 229E, NL63, OC43 và HKU1; hai loại khác là MERS-CoV và SARS-CoV nguy hiểm hơn và từng gây ra đại dịch toàn cầu. Virus Corona thuộc chủng mới ký hiệu 2019-nCoV hoặc nCoV, còn được gọi với cái tên “Virus Vũ Hán” đang “tung hoành” suốt từ năm 2019 đến nay. Đây là tác nhân gây ra bệnh viêm phổi cấp, khiến hơn 100 triệu người mắc, hơn 2 triệu người tử vong trên thế giới.
+            </p>
+            <div style="display: flex;">
+                <div style="width: 35%;">
+                    <img style="border-radius: 5px;" src="./../../image/corona1.jpg" width="96%" alt="">
+                </div>
+                <div style="width: 64%; text-align: left;">
+                    <p style="margin-top: -3px;">
+                        Đây là dạng virus mới nên con người chưa từng có miễn dịch, kể cả miễn dịch chéo trước đó. Virus Corona là một họ virus lớn thường lây nhiễm cho động vật nhưng đôi khi chúng có thể tiến hóa và lây sang người. Khi virus xâm nhập vào cơ thể, nó đi vào trong một số tế bào và chiếm lấy bộ máy tế bào (gây tổn thương viêm đặc hiệu ở đường hô hấp), đồng thời virus chuyển hướng bộ máy đó để phục vụ cho chính nó, tạo ra virus mới và nhiễm tiếp người khác. Người nhiễm 2019-nCoV có các triệu chứng cấp tính: ho, sốt, khó thở, có thể diễn biến đến viêm phổi nặng, suy hô hấp cấp tiến triển và tử vong; đặc biệt ở những người lớn tuổi, người có bệnh mạn tính, suy giảm miễn dịch.
+                    </p>
+                </div>
+            </div>
+            <p>
+                Thời gian ủ bệnh của 2019-nCoV là 14 ngày tức là từ lúc nhiễm virus Corona tới lúc phát bệnh là 14 ngày mới có biểu hiện lâm sàng. Điều này khiến cho các biện pháp kiểm soát hiện nay rất khó phát hiện.
+            </p>
+            <!-- 3 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">3. Virus Corona gây bệnh như thế nào?</strong><br>
+            <p>Hầu hết các loại virus Corona có con đường lây truyền giống như những loại virus gây cảm lạnh khác, đó là:</p>
+            <ul style="margin: -5px 0px 10px 0px; color: rgb(108, 0, 196);">
+                <li>Người bệnh ho và hắt hơi mà không che miệng, dẫn tới phát tán các giọt nước vào không khí, làm lây lan virus sang người khỏe mạnh.</li>
+                <li>Người khỏe mạnh chạm hoặc bắt tay với người có virus Corona khiến virus truyền từ người này sang người khác.</li>
+                <li>Người khỏe mạnh tiếp xúc với một bề mặt hoặc vật thể có virus, sau đó đưa tay lên mũi, mắt hoặc miệng của mình.</li>
+                <li>Trong những trường hợp hiếm hoi, virus Corona có thể lây lan qua tiếp xúc với phân.</li>
+            </ul>
+            <p>
+                Các nhà khoa học Trung Quốc cho biết, trung bình một bệnh nhân nhiễm virus Corona sẽ lây lan sang 5,5 người khác. Chính vì virus Corona có khả năng lan truyền rất nhanh từ người sang người, nên nếu người dân không được trang bị kiến thức về phòng chống bệnh, đại dịch rất dễ xảy ra.
+            </p>
+            <!-- 4 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">4. Hệ gen của virus corona là gì?</strong><br>
+            <p>
+                Bộ gen của virus corona là bộ gen lớn nhất trong số các virus RNA, bao gồm các vùng: vùng 5’UTR, khung đọc mở, vùng 3’UTR và cuối cùng là đuôi-poly (A).
+            </p>
+            <p>
+                Có 4 protein cấu trúc được bảo tồn trên các CoV đó là protein (S), protein màng (M), protein vỏ (E) và nucleocapsid (N) protein. Trong đó, Protein S chịu trách nhiệm liên kết với tế bào vật chủ và là thụ thể để virus xâm nhập vào tế bào. Các protein M, E và N là một phần của nucleocapsid của các hạt virus.
+            </p>
+            <div style="display: flex; margin-bottom: 10px;">
+                <div style="width: 50%; text-align: left;">
+                    <p>
+                        Bộ gen của virus corona có các mặt tương đồng như sau:
+                    </p>
+                    <ul style="color: rgb(108, 0, 196);">
+                        <li>Tương đồng 50% mã gen so với chủng virus MERS-CoV;</li>
+                        <li>Tương đồng 79,5% mã gen so với chủng virus SARS-CoV;</li>
+                        <li>Tương đồng 96% mã gen so với chủng virus Corona được phát hiện trong dơi, đặc biệt là dơi móng ngựa;</li>
+                        <li>Tương đồng 99% mã gen so với chủng virus Corona có trong loài Tê tê.</li>
+                    </ul>
+                </div>
+                <div style="width: 48%;">
+                    <img style="border-radius: 5px;" src="./../../image/corona3.jpg" width="96%" alt="">
+                </div>
+            </div>
+            <!-- 5 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">5. Thời gian ủ bệnh Corona thông thường là bao lâu?</strong><br>
+            <h5 style="color: rgb(150, 116, 116); margin: 10px 0px 0px 0px">Đối với Coronavirus</h5>
+            <p>
+                Các ước tính hiện tại cho thấy, các chủng virus Corona chẳng hạn như MERS và SARS có thời gian ủ bệnh khoảng 2-11 ngày. Giống như các bệnh về đường hô hấp khác, sau khi hết giai đoạn ủ bệnh, người nhiễm Coronavirus sẽ xuất hiện các triệu chứng gồm sổ mũi, đau họng, ho và sốt… Bệnh có thể diễn tiến nặng ở một số người khi gây ra viêm phổi cấp. Nguy hiểm hơn, Covid-19 có thể nhanh chóng gây tử vong cho đối tượng nguy cơ cao như người già, người mắc bệnh mạn tính (tiểu đường, tim mạch, ung thư, viêm phổi tắc nghẽn mãn tính COPD…).
+            </p>
+            <h5 style="color: rgb(150, 116, 116); margin: 10px 0px 0px 0px">Đối với chủng mới</h5>
+            <p>
+                Viêm đường hô hấp cấp do virus Corona chủng mới có thể xuất hiện các triệu chứng sau thời gian ủ bệnh kéo dài từ 2 đến 14 ngày, trung bình là 5 ngày. Trong thời gian này, virus vẫn có thể truyền bệnh cho người khác. Mặc dù vậy, nhiều nghiên cứu cũng chỉ ra rằng, sẽ có một số ít trường hợp thời gian ủ bệnh Sars-Cov 2 có thể kéo dài hơn 14 ngày. Nghiên cứu  được thực hiện bởi Trường Y tế Cộng đồng Johns Hopkins Bloomberg (Mỹ) cho thấy, trong số 10.000 đối tượng bị nhiễm Covid-19 thì có khoảng 101 trường hợp xuất hiện các triệu chứng đầu tiên sau 14 ngày. Do đó, các chuyên gia cho rằng các việc tiếp xúc với người không có biểu hiện bệnh không có nghĩa là an toàn. Nói cách khác, Covid-19 có thể lây nhiễm ngay cả trước khi các triệu chứng đầu tiên xuất hiện.
+            </p>
+            <!-- dấu hiệu -->
+            <h5 id="DHieu" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Dấu hiệu</strong></h5>
+            <p>
+                COVID-19 tác động đến mỗi người theo những cách khác nhau. Hầu hết những người nhiễm vi-rút sẽ có triệu chứng bệnh từ nhẹ đến trung bình và có thể hồi phục mà không cần nhập viện.
+            </p>
+            <p style="color: rgba(0, 155, 182, 0.911);">Các triệu chứng thường gặp nhất:</p>
+            <ul style="color: rgb(108, 0, 196); margin-top: -13px;">
+                <li>sốt</li>
+                <li>ho khan</li>
+                <li>mệt mỏi</li>
+            </ul>
+            <p style="color: rgba(0, 155, 182, 0.911);">Các triệu chứng ít gặp hơn:</p>
+            <ul style="color: rgb(108, 0, 196); margin-top: -13px;">
+                <li>đau nhức</li>
+                <li>đau họng</li>
+                <li>tiêu chảy</li>
+                <li>viêm kết mạc</li>
+                <li>đau đầu</li>
+                <li>mất vị giác hoặc khứu giác</li>
+                <li>da nổi mẩn hay ngón tay hoặc ngón chân bị tấy đỏ hoặc tím tái</li>
+            </ul>
+            <p style="color: rgba(0, 155, 182, 0.911);">Các triệu chứng nghiêm trọng:</p>
+            <ul style="color: rgb(108, 0, 196); margin-top: -13px;">
+                <li>khó thở</li>
+                <li>đau hoặc tức ngực</li>
+                <li>mất khả năng nói hoặc cử động</li>
+            </ul>
+            <img style="border-radius: 10px; margin: 9px 0px 30px 60px;" src="./../../image/virutcorana2.jpg" width="85%" alt="">
+
+            <!-- nên làm k nên làm -->
+            <h5 id="NLam" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Nên làm và Không nên làm</strong></h5>
+            <div style="display: flex;">
+                <!-- nên -->
+                <div style="width: 49%; border-right: 0.5px solid black;">
+                    <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">NÊN LÀM</h3>
+                    <ul>
+                      <li>Luôn luôn đeo khẩu trang khi ra ngoài.</li>
+                      <li>Giữ khoảng cách tiếp xúc.</li>
+                      <li>Thường xuyên rửa tay bằng xà phòng hoặc dung dịch sát khuẩn.</li>
+                      <li>Thực hiện khai báo y tế.</li>
+                      <li>Cập nhật tình hình sức khỏe hàng ngày.</li>
+                      <li>Giữ liên hệ thường xuyên với cán bộ y tế, cơ sở y tế.</li>
+                      <li>Uống đủ nước.</li>
+                      <li>Ăn uống đủ chất và đảm bảo ăn 3-4 bữa mỗi ngày.</li>
+                      <li>Ăn nóng, thức ăn nên luộc, hấp nấu chín mềm.</li>
+                      <li>Hạn chế ra ngoài.</li>
+
+                    </ul>
+                  </div>
+                <!-- ko nên -->
+                <div style="width: 49%;">
+                  <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">KHÔNG NÊN LÀM</h3>
+                  <ul>
+                    <li>Không đi du lịch, nhất là khi có dấu hiệu bị sốt, đau họng.</li>
+                    <li>Không hoảng sợ, lo lắng.</li>
+                    <li>Không tự ý đến các cơ sở y tế nếu có dấu hiệu của bệnh hô hấp.</li>
+                    <li>Không nên sử dụng điều hòa.</li>
+                    <li>Tăng cường thông khí trong nhà bằng cách mở cửa sổ.</li>
+                    <li>Thường xuyên lau dọn nhà cửa.</li>
+                    <li>Không chạm tay vào mắt, mũi, miệng khi chưa rửa tay bằng nước và xà phòng.</li>
+                  </ul>
+                </div>
+            </div>
+            <!-- nên ăn và khôgn nên ăn -->
+            <h5 id="NAn" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px; margin-top: 5px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Nên ăn và không nên ăn</strong></h5>
+            <div style="display: flex;">
+              <!-- nên -->
+              <div style="width: 49%; border-right: 0.5px solid black;">
+                  <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">NÊN ĂN</h3>
+                  <ul>
+                    <li>Cam, đu đủ, bưởi...(Những thực phẩm giàu vitamin C)</li>
+                    <li>Tôm, cua, cá hồi...(Những thực phẩm giàu vitamin D và Zn)</li>
+                    <li>Ăn hoa quả và rau.</li>
+                  </ul>
+                </div>
+              <!-- ko nên -->
+              <div style="width: 49%;">
+                <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">KHÔNG NÊN ĂN</h3>
+                <ul>
+                  <li>Thực phẩm chế biến sẵn.</li>
+                  <li>Thực phẩm chưa chín.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <!-- bên phải -->
+        <div style="width: 26.5%; margin-top: 20px;">
+          <!-- liên quan 1 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cách ly triệt để, triển khai cao điểm rà soát tất cả người nhập cảnh.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 33px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 04/05/2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc1.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Phó Thủ tướng Vũ Đức Đam yêu cầu, phải cách ly triệt để, không được để lây nhiễm trong khu cách ly, từ khu cách ly ra cộng đồng...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 2 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 19px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">"Bỏ phố về quê" để tránh COVID-19 là phản khoa học, phản tác dụng.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 51px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 09/03/2020</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc2.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Theo chuyên gia y tế, di tản khi dịch COVID-19 đang diễn biến phức tạp không những gây khó khăn cho công tác kiểm soát...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 3 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cập nhật dịch Covid-19 ngày 22-5: 20 ca mới, hơn một nửa ở Bắc Giang.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 37px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 22-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc3.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Sáng 22-5, cả nước ghi nhận có thêm 20 ca mắc Covid-19 mới, trong đó hơn một nửa là ở Bắc Giang. Tuy nhiên có thể thấy, tốc độ tăng...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 4 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">11 mẫu xét nghiệm SARS-CoV-2 tại các ổ dịch Đà Nẵng là chủng virus Anh.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 21px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 19-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc4.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Đó là thông tin được bác sĩ Tôn Thất Thạnh, Giám đốc Trung tâm Kiểm soát bệnh tật (CDC) TP Đà Nẵng đưa ra tại cuộc họp Ban Chỉ đạo...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 5 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Thêm bốn ca nhiễm Covid-19, TP Hải Dương phát thông báo khẩn số 5.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 9px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 20-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc5.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Đêm 19-5, Ban Chỉ đạo phòng, chống dịch Covid-19 TP Hải Dương cho biết đã ghi nhận thêm bốn trường hợp dương tính với virus SARS-CoV-2...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <hr style="width: 69%; margin: 0 auto; height: 5px; border-radius: 10px; color: rgb(14, 56, 6);">
+
+          <!-- tin tức liên quan -->
+          <div id="ReadMore" class="LienQuan">
+            <h6 class="hello" style="margin: 10px 0px 10px 16px; font-size: 20px;"><i class="fa fa-list-ul" aria-hidden="true"></i> <strong style="color: rgba(21, 21, 226, 0.822); font-weight: 500;"> Danh sách các bài viết liên quan.</strong> </h6>
+            <!-- 1 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Thêm 73 ca Covid-19, chủ yếu ở Bắc Giang, Bắc Ninh.
+                </a> 
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Một người bán quán ăn tại TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Người đàn ông 63 tuổi ở TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Một người bán quán ăn tại TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 5 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Thêm 109 ca Covid-19 trong nước, điểm nóng ở Bắc Giang.
+                </a> 
+              </p>
+            </div>
+            <!-- 6 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Hai con của người bán quán ăn ở TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 7 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Đà Nẵng có thêm ca COVID mới trong ngày là F1.
+                </a> 
+              </p>
+            </div>
+            <!-- 8 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Ca nghi ngờ nhiễm COVID-19 ở Phú Nhuận có kết quả âm tính.
+                </a> 
+              </p>
+            </div>
+            <!-- 9 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Trốn theo xe gom rác vào khu phong tỏa để thu nợ tiền rượu.
+                </a> 
+              </p>
+            </div>
+            <!-- 10 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  TP.HCM: Khoanh vùng, lấy mẫu người dân trong chợ Phú Nhuận.
+                </a> 
+              </p>
+            </div>
+          </div>          
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <footer class="ftco-footer">
+        <div class="container mb-5 pb-4">
+            <div class="row">
+                <div class="col-lg col-md-6">
+                    <div style="width: 350px;" class="ftco-footer-widget ">
+                        <h3 class="logo"><a style="text-decoration: none;" href="./../../HomePage/HomePage.html"><img src="./../../image/logo-footer.png"> Medicine-Foods</a></h3>
+                        <p>The website provides information about what to eat and do when you are sick.</p>
+                        <ul class="ftco-footer-social list-unstyled mt-4 ">
+                            <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                    <div class="ftco-footer-widget ">
+                        <h2 class="ftco-heading-2 ">Links</h2>
+                        <ul class="list-unstyled ">
+                            <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></i></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/" target="_blank">Instagram</a></i></li>
+                            <li><i class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi" target="_blank">Twitter</a></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                    <div class="ftco-footer-widget ">
+                        <h2 class="ftco-heading-2 ">Services</h2>
+                        <div id="ServicesFooter">
+                          <ul class="list-unstyled">
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a  href="#" class="medicine" onclick="BuyMedicine();" >Buy-Medicine</a></i></li>
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="../contact/contact.html">Contact</a></i></li>
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="../gallery/gallery.html">Gallery</a></i></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2">Informations</h2>
+                      <ul class="list-unstyled ">
+                        <li>
+                          <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097" target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+                        <li>
+                          <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                            <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                            <br>
+                            <a style="margin-left: 27px;"
+                              href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                              target="_blank">nhthanh.20it7@vku.udn.vn</a>
+                            <br>
+                            <a style="margin-left: 14px;"
+                              href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                              target="_blank">nqnphuong.20it@vku.udn.vn</a>
+                              <br>
+                            <a style="margin-left: 44px;" href="https://mail.google.com/mail/u/1/#inbox" target="_blank">ttphuc.20it6@vku.udn.vn</a>   
+                          </i>
+                        </li>  
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </footer>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+      <!-- add js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./../../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+      <script src="Covid.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+</html>

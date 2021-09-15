@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine-Foods</title>
+  <link rel="stylesheet" href="../BootStrap 5.0/css 5.0/bootstrap.min.css">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./../image/logo-footer.png" />
+</head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div style="padding-top: -5px !important; padding-bottom: -10px;" class="container-fluid">
+        <!-- home -->
+        <div style="margin: 0px 190px 0px 150px; display: flex;">
+            <a href="../HomePage/HomePage.html"><img style="padding-top: 5px;" src="../image/logo-footer.png"
+                id="LogoHeader" width="74px" height="75px" alt="">
+            </a>
+            <h4 style="margin: 18px 0px -3px 0px; color: rgb(190, 79, 0); text-align: center; line-height: 24px; margin-left: 10px;">
+              <a style="text-decoration: none;" href="../HomePage/HomePage.html">Medicine-Foods</a><br>
+              <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+            </h4>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="width: 50% !important;" class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div>
+            <!-- 1 -->
+            <div style="height: auto; border-bottom: 0.1px solid black;">
+              <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- contact -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./../contact/contact.html"><b>Contact</b></a>
+                </li>
+                <!-- Review -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../gallery/gallery.html"><b>Gallery</b></a>
+                </li>
+                <!-- search -->
+                <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                  <form class="d-flex" onsubmit="return redirect();">
+                    <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                      placeholder="Search" aria-label="Search">
+                    <button style="border-color: transparent;" class="btn btn-outline-success" type="submit">
+                      <i style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </ul>
+            </div>
+            <!-- 2 -->
+            <div style="height: auto;">
+              <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- vitamin -->
+                <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                  </a>
+                  <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../vitamin/vitamin A/VitaminA.html">Vitamin A</a></li>
+                    <li><a class="dropdown-item" href="../vitamin/vitamin B/VitaminB.html">Vitamin B</a></li>
+                    <li><a class="dropdown-item" href="../vitamin/vitamin C/VitaminC.html">Vitamin C</a></li>
+                    <li><a class="dropdown-item" href="../vitamin/vitamin D/VitaminD.html">Vitamin D</a></li>
+                    <li><a class="dropdown-item" href="../vitamin/vitamin E/VitaminE.html">Vitamin E</a></li>
+                    <li><a class="dropdown-item" href="../vitamin/vitamin K/VitaminK.html">Vitamin K</a></li>
+                  </ul>
+                </li>
+                <!-- minerals -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                  </a>
+                  <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./../minerals/Axit folic/folic.html">Axit Folic</a></li>
+                    <li><a class="dropdown-item" href="./../minerals/canxi/canxi.html">Canxi</a></li>
+                    <li><a class="dropdown-item" href="./../minerals/sat Fe/Fe.html">Sắt - Fe</a></li>
+                    <li><a class="dropdown-item" href="./../minerals/Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                    <li><a class="dropdown-item" href="./../minerals/Crom Cr/crom.html">Crôm - Cr</a></li>
+                  </ul>
+                </li>
+                <!-- buy medicine -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                  </a>
+                  <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                    <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                    <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                    <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- main -->
+  <main>
+    <!-- button scroll top -->
+    <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+    <img src="./../../image/top (1).png" onclick="toTop()" id="top"> 
+       
+    <!-- IMG đầu của homepage -->
+    <div>
+        <img style="background: no-repeat; position: absolute; border-bottom: 1px solid rgba(101, 179, 199, 0.212);"
+          src="../image/slide2.jpg" width="100%" height="410px" alt="">
+      <div class="ImgFirst">
+        <h2 style="text-align: left; font-weight: 450;">
+          MEDICINE-FOODS<br>
+          Nền tảng sức khỏe của người VIỆT
+        </h2>
+        <p style="margin-top: 20px;">
+          Medicine-foods là website về sức khỏe, giúp người dùng tiếp cận dễ dàng với căn bệnh mà mình đang muốn tìm
+          kiếm và toàn bộ thông tin đó đều được tóm tắt và chọn lọc từ wikipedia, google,...
+        </p> <br>
+        <a href="#ReadMoreSmooth"><input class="ReadMore" type="button" value="READ MORE INFORMATION"></a>
+      </div>
+    </div>
+
+    <!-- 4 lợi ích và quảng cáo -->
+    <div class="One1">
+      <div style="display: flex;">
+        <div style="width: 100%; display: flex; margin: 50px 10px 10px 10px">
+          <div style="width: 40%;">
+            <div>
+              <h2 style="color: rgba(14, 14, 14, 0.959); line-height: 45px; text-align: center; font-weight: 300;"><b>4
+                  lợi ích không thể phủ nhận mà<br>Medicine-Foods mang lại</b></h2>
+              <hr class="HrLoiIch">
+              <p style="margin: 15px 30px 0px 35px; text-align: center; color: rgb(31, 31, 31);">
+                Hãy đến với website của chúng tôi, đơn giản vì chúng tôi luôn tạo sự khác biệt và theo ý kiến của người
+                dùng, từ đó chọn lọc và thiết kế ra 1 website đáp ứng đủ những ý kiến đó ^^.
+              </p>
+            </div>
+            <div>
+              <img style="margin: -15px 0px 10px 0px;" src="../image/Home2.png" width="95%" alt="">
+            </div>
+          </div>
+          <!-- div 4 cái icon nhỏ -->
+          <div style="width: 55%; margin-top: -55px;">
+            <img style="margin-left: 205px;" src="./../image/homepageLOIICH1.png" width="55%" alt="">
+            <div class="CaiNho" style="display: flex; width: 100%;">
+                <!-- 1 -->
+              <div
+                style="margin: 30px 0px 0px 60px; width: 45%; border-right: 0.5px solid rgba(66, 66, 66, 0.493); border-bottom: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin-right: 50px;">
+                  <div>
+                    <img class="LoiIch" src="../image/DeDangUSE.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div style="text-align: left !important;">
+                    <h4 style="color: rgb(7, 153, 19); text-align: left; margin: 16px 0px 0px 0px;">DỄ DÀNG SỬ DỤNG</h4>
+                  </div>
+                </div>
+                <p style="margin:5px 50px 50px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Giao diện đơn giản, đẹp mắt. Chức năng và nội dung chỉ xoay quanh bệnh và thuốc. Ngoài ra còn luôn cập
+                  nhập liên tục tin tức về báo sức khỏe.
+                </p>
+              </div>
+              <!-- 2 -->
+              <div style="margin: 30px 0px 0px 0px; width: 45%; border-bottom: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin-left: 50px;">
+                  <div>
+                    <img class="LoiIch" src="../image/DapUngNhuCau.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(175, 87, 5); text-align: left; margin: 16px 0px 0px 0px">ĐÁP ỨNG NHU CẦU</h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 0px 50px 50px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Thu thập thông tin và lấy ý kiến của người dùng rồi cho ra một trang web với yêu cầu đó và thông tin
+                  của website được lấy và tóm tắt từ Wikipedia, google,...
+                </p>
+              </div>
+            </div>
+            <div class="CaiNho" style="display: flex; width: 100%;">
+              <!-- 3 -->
+              <div
+                style="margin: 0px 0px 0px 60px; width: 48.5%; border-right: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin: 40px 50px 0px 0px;">
+                  <div>
+                    <img class="LoiIch" src="../image/NhanhNhe.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(175, 87, 5); text-align: left; margin: 16px 0px 0px 0px"> NHANH-NHẸ-MƯỢT</h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 50px 5px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Tiêu chí hàng đầu của một Website tốt là NHANH-NHẸ-MƯỢT, tạo sự thoải mái cho người dùng. Và
+                  Medicine-Foods luôn cố gắng thực hiện tốt điều đó.
+                </p>
+              </div>
+              <!-- 4 -->
+              <div style="margin: 40px 0px 0px 50px; width: 45%;">
+                <div style="display: flex;">
+                  <div>
+                    <img class="LoiIch" src="../image/NhanhNhe.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(7, 153, 19); text-align: left; margin: 16px 12px 0px 0px;">THÔNG-TIN-CHUẨN
+                    </h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 0px 5px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Với một website về thông tin bệnh án, thì việc thông tin chuẩn xác là yếu tố đầu tiên và
+                  Medicine-Foods luôn đảm bảo với người dùng về điều đó.
+                </p>
+              </div>
+            </div>
+            <hr style="width: 50%; margin: 44px 0px 0px 215px; height: 5px; color: rgb(84, 9, 134); border-radius: 30px;">
+          </div>
+        </div>
+      </div>
+      <!-- tiếp -->
+      <!-- những điều nên đọc và top những căn bệnh đang bị nhiều nhất trên thế giới -->
+      <div id="ReadMoreSmooth" class="one">
+        <!-- phần bên trái -->
+        <div class="two" style="width: 70.3%; margin: 0px 8px 0px 18px; padding: 0px 10px 0px 12px;">
+          <!-- <img style="margin: 0px 0px 40px 10px; border-radius: 10px;" src="./../image/vinhhalong4.jpg" width="98%" alt=""> -->
+          <!-- 1 -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.6px;"><strong
+              style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">20 thói quen có lợi nhất cho sức khỏe chính
+              bạn</strong></h5>
+          <p>
+            Để có một sức khỏe tốt đòi hỏi cả một quá trình chăm sóc và bảo vệ sức khỏe. Cùng luyện tập và duy trì các
+            thói quen dưới đây để có sức khỏe tốt mỗi ngày nhé.
+          </p>
+          <div style="display: flex; width: 100% !important;">
+            <div style="width: 40%;">
+              <ul style="color: rgb(0, 65, 163); margin: -10px 0px 5px 0px;">
+                <li>Thở đúng cách.</li>
+                <li>Rửa tay thường xuyên.</li>
+                <li>Không ngoáy mũi.</li>
+                <li>Thẳng người, kéo căng cơ rất quan trọng.</li>
+                <li>Ăn sáng đều đặn.</li>
+                <li>Tắm rửa sạch sẽ.</li>
+                <li>Cắt ngắn móng tay.</li>
+                <li>Không dùng chung đồ dùng cá nhân.</li>
+                <li>Nói không với các thức ăn nhiều đường.</li>
+                <li>Hãy để cơ thể ra mồ hôi ra.</li>
+                <li>Ngủ ngon giấc.</li>
+                <li>Không lo lắng.</li>
+                <li>Giám sát thời gian ngồi trước màn hình.</li>
+                <li>Uống nhiều nước.</li>
+                <li>Nói không với đồ ăn vặt.</li>
+                <li>Ăn rau xanh.</li>
+                <li>Không hút thuốc lá.</li>
+                <li>Luôn dùng kem chống nắng.</li>
+                <li>Tình dục an toàn.</li>
+                <li>Tôn trọng cơ thể và bản thân bạn.</li>
+              </ul>
+            </div>
+            <div style="width: 60%;">
+              <img style="margin: 10px 10px 40px -10px;" src="./../image/home4.png" width="100%" alt="">
+            </div>
+          </div>
+          <!-- 2 -->
+          <h5 id="What"
+            style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.5px; text-align: right !important; margin-top: 30px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">8 điều cần biết để giữ gìn sức khoẻ khi ăn
+              uống</strong>
+          </h5>
+          <p style="text-align: right !important;">
+            Chúng ta thường được khuyên rằng, muốn chăm sóc sức khỏe, chế độ ăn uống cần phải điều độ. Thế nhưng, nhiều
+            người lại chưa biết phải áp dụng lời khuyên này như thế nào cho đúng để giữ gìn sức khỏe cho mình.
+          <div style="display: flex;">
+            <img src="./../image/home5.png" width="70%" height="190px" alt="">
+            <p style="float: right; text-align: right; color: rgb(139, 107, 0); margin: -5px 15px 0px 0px;">
+              Ăn ít năng lượng .1 <br>
+              Ăn ít muối .2 <br>
+              Ăn ít dầu mỡ .3 <br>
+              Ăn ít đường .4 <br>
+              Ăn nhiều chất xơ .5 <br>
+              Ăn nhiều Canxi .6 <br>
+              Ăn nhiều I- ốt hơn .7 <br>
+              Uống nhiều nước .8 <br>
+            </p>
+          </div>
+          </p>
+          <!-- 3 -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.6px; margin-top: 60px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">8 siêu thực phẩm tốt cho sức khỏe nên ăn
+              hàng ngày</strong></h5>
+          <p>
+          <p style="margin-top: -10px;">
+            Việc duy trì lối sống lành mạnh và ăn uống khoa học là yếu tố giúp chúng ta có được sức khỏe tốt. Điều này
+            giúp cơ thể cung cấp đầy đủ năng lượng để làm việc hiệu quả hơn. Sau đây là những lời khuyên hữu ích cho một
+            chế độ ăn uống tốt nhất từ các chuyên gia dinh dưỡng bạn nên tham khảo.
+          </p>
+          <p>
+            Những thực phẩm giàu chất dinh dưỡng xứng đáng có một vị trí trong chế độ ăn uống hàng ngày như: rau bina,
+            cà chua, quả óc chó, đậu đen, cà rốt…
+          </p>
+          <ol style="margin-top: -10px; color: rgb(0, 56, 141);">
+            <li>Sữa chua, sữa Kefir, sữa đậu nành.</li>
+            <li>Rau bina, cải xoăn, cải ngọt.</li>
+            <li>Cà chua.</li>
+            <li>Quả việt quất.</li>
+            <li>Đậu đen.</li>
+            <li>Cà rốt, khoai lang, bí ngô, ớt chuông vàng.</li>
+            <li>Quả óc chó.</li>
+            <li>Yến mạch.</li>
+          </ol>
+          </p>
+        </div>
+        <!-- phần bên phải -->
+        <div style="width: 27.35%; border-left: 1px solid rgba(150, 150, 150, 0.459);">
+          <!-- 1 -->
+          <div style="width: 100%; margin: -22px 0px 0px -2px; height: 696px;">
+            <div style="width: 100%; padding-top: 1px;">
+              <p
+                style="text-align: left; margin: 15px 0px 0px 25px; font-weight: 600; font-size: 20px; color: rgb(0, 150, 0);">
+                4 căn bệnh gây chết người nhiều nhất ở<br>
+                <strong style="color: rgb(218, 0, 0); font-weight: 500;">Việt Nam.</strong>
+                <i style="color: rgba(119, 119, 119, 0.849); font-size: 13px; margin: 0px 0px 0px 10px;"
+                  class="fa fa-calendar" aria-hidden="true"> Ngày 08/01/2019</i>
+              </p>
+              <!-- top 1 -->
+              <h5 class="Top" style="margin: 23px 0px 0px 27px; height: 31.2px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  1:</strong>
+                Bệnh tim mạch.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/benh-ly-tim-mach-nguyen-nhan-gay-tu-vong-hang-dau/" target="_blank"><img
+                      src="./../image/HomePageTop1.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(37, 24, 13);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/benh-ly-tim-mach-nguyen-nhan-gay-tu-vong-hang-dau/" target="_blank">Heart-related
+                        diseaes</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Tử vong do tim mạch cao gấp 20
+                    lần tử vong do ung thư. Theo Tổ chức Y tế Thế giới (WHO)...</p>
+                </div>
+              </div>
+              <!-- top 2 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  2:</strong>
+                Ung thư.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop2.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(39, 29, 14);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cancer</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Ung thư mối lo sức khỏe của
+                    toàn cầu. Đứng sau tim mạch, ung thư là nguyên nhân thứ 2 gây chết người...</p>
+                </div>
+              </div>
+              <!-- top 3 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  3:</strong>
+                Tiểu đường.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop3.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(41, 30, 15);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Diabetes</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Tiểu đường gây nhiều biến
+                    chứng nhồi máu cơ tim. Bệnh tiểu đường (đái tháo đường) là nhóm bệnh lý...</p>
+                </div>
+              </div>
+              <!-- top 4 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  4:</strong>
+                Bệnh thận mạn tính.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop4.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(41, 30, 16);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Chronic
+                        kidney disease</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Suy thận mạn tính gây suy giảm
+                    chức năng thận. Suy thận mạn tính là tình trạng suy giảm chức năng thận...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 80%; margin: 0px 0px 0px 44px; height: 5px; color: rgb(78, 0, 97); border-radius: 20px;">
+          <!-- 2 -->
+          <div style="width: 100.21%; margin: 20px 0px 0px 2.5px;">
+            <!-- contact -->
+            <div style="width: 90%; margin-top: 4px;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="./../image/bgContact.jpg" width="100%" height="125px" alt="">
+                <div class="overlay">
+                  <h1>Contact</h1>
+                  <p>
+                    <a style="text-decoration: none;"
+                      href="./../contact/contact.html"><strong>MEDICINE-FOODS</strong><br> sức khỏe của người việt</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- gallery -->
+            <div style="width: 90%;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div style="margin: 9px 0px 20px 0px;" class="hovereffect">
+                <img class="img-responsive" src="./../image/contact4.PNG" width="100%" alt="">
+                <div class="overlay">
+                  <h1>Gallery</h1>
+                  <p>
+                    <a style="text-decoration: none;"
+                      href="./../gallery/gallery.html"><strong>MEDICINE-FOODS</strong><br> sức khỏe của người việt</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 80%; margin: 2px 0px 0px 41px; height: 5px; color: rgb(78, 0, 97); border-radius: 20px;">
+          <!-- 3 -->
+          <div style="margin-top: 20px;">
+            <h5 style="color: rgb(39, 26, 15); text-align: center; font-weight: 400;">
+              9 THÓI QUEN DUY TRÌ SỨC KHỎE
+              <br>
+              <strong style="color: rgb(34, 168, 0);">TRONG NĂM 2021</strong>
+            </h5>
+            <div style="width: 80%; margin: 0px 0px 0px 40px; border-radius: 20px;">
+              <!-- BenTrong9ThoiQuen -->
+              <div class="BenTrong9ThoiQuen" style="line-height: 12px; padding: 14px 0px 6px 0px;">
+                <!-- 1 -->
+                <p>
+                  <strong style="color: rgb(13, 151, 0); font-size: 21px; margin-left: 35px;">9 </strong>
+                  nghìn bước mỗi ngày
+                </p>
+                <!-- 2 -->
+                <p>
+                  <strong style="color: rgb(14, 163, 0); font-size: 21px; margin-left: 35px;">8 </strong>
+                  tiếng ngủ sâu
+                </p>
+                <!-- 3 -->
+                <p>
+                  <strong style="color: rgb(13, 155, 0); font-size: 21px; margin-left: 35px;">7 </strong>
+                  cốc nước
+                </p>
+                <!-- 4 -->
+                <p>
+                  <strong style="color: rgb(13, 153, 0); font-size: 21px; margin-left: 35px;">6 </strong>
+                  phút tĩnh tâm
+                </p>
+                <!-- 5 -->
+                <p>
+                  <strong style="color: rgb(12, 150, 0); font-size: 21px; margin-left: 35px;">5 </strong>
+                  loại trái cây và rau củ
+                </p>
+                <!-- 6 -->
+                <p>
+                  <strong style="color: rgb(12, 150, 0); font-size: 21px; margin-left: 35px;">4 </strong>
+                  quãng nghỉ ngắn
+                </p>
+                <!-- 7 -->
+                <p>
+                  <strong style="color: rgb(13, 155, 0); font-size: 21px; margin-left: 35px;">3 </strong>
+                  bữa ăn đầy đủ dinh dưỡng
+                </p>
+                <!-- 8 -->
+                <p>
+                  <strong style="color: rgb(13, 151, 0); font-size: 21px; margin-left: 35px;">2 </strong>
+                  tiéng không điện thoại cuối ngày
+                </p>
+                <!-- 9 -->
+                <p>
+                  <strong style="color: rgb(12, 148, 0); font-size: 21px; margin-left: 35px;">1 </strong>
+                  buổi tập thể dục từ 10 - 30 phút
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- tin tức -->
+    <div class="TinTucCuoi" style="width: 100%; background-color: rgba(192, 221, 206, 0.274);">
+      <div style="background-color: rgba(211, 227, 230, 0.411) !important;">
+        <div style="text-align: center; padding-top: 30px;">
+          <h1 style="color: rgba(0, 128, 38, 0.89); font-weight: 400;">TIN TỨC MỚI</h1>
+          <p style="color: rgb(58, 58, 58); margin-top: -5px;">Chúng tôi luôn cập nhập những thông tin mới nhất về sức khỏe</p>
+        </div>
+        <div class="TinTuc" style="margin: 30px 150px 0px 150px; display: flex; padding-bottom: 50px;">
+          <!-- tin tức 1 -->
+          <div class="DivTinTuc1">
+            <div class="IMG">
+              <a href="https://moh.gov.vn/" target="_blank"><img src="../image/TinTuc1.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);" href="https://moh.gov.vn/" target="_blank"> 
+                <b>Bộ Y tế: 63 tỉnh, thành hỏa tốc lập danh sách 10 nhóm ưu tiên tiêm vắc xin COVID-19 miễn
+                  phí.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 10px 10px 10px;">Để xây dựng kế hoạch phân phối, triển khai tiêm vắc
+              xin phòng chống COVID-19, thì bộ y tế...</p>
+          </div>
+          <!-- tin tức 2 -->
+          <div class="DivTinTuc2">
+            <div class="IMG">
+              <a
+                href="https://tuoitre.vn/so-ca-nhiem-o-campuchia-vuot-moc-10-000-lao-lan-dau-co-ca-nhiem-3-con-so-20210426180935405.htm"><img
+                  src="../image/TinTuc2.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);"
+                href="https://tuoitre.vn/so-ca-nhiem-o-campuchia-vuot-moc-10-000-lao-lan-dau-co-ca-nhiem-3-con-so-20210426180935405.htm">
+                <b>Số ca nhiễm ở Campuchia vượt mốc 10.000, Lào lần đầu có ca nhiễm 3 con số.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 10px 10px 10px;">TTO - Tổng số ca bệnh COVID-19 ở Campuchia đã vượt
+              mốc 10.000 sau khi nước này có thêm 580 ca...</p>
+          </div>
+          <!-- tin tức 3 -->
+          <div class="DivTinTuc3">
+            <div class="IMG">
+              <a
+                href="https://tuoitre.vn/ung-thu-dot-quy-nhoi-mau-co-tim-sat-thu-am-tham-tan-pha-suc-khoe-nguoi-tre-20210423192110537.htm"><img
+                  src="../image/TinTuc3.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);"
+                href="https://tuoitre.vn/ung-thu-dot-quy-nhoi-mau-co-tim-sat-thu-am-tham-tan-pha-suc-khoe-nguoi-tre-20210423192110537.htm">
+                <b>Ung thư, đột quỵ, nhồi máu cơ tim… “sát thủ” âm thầm tàn phá sức khỏe người trẻ.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 5px 10px 5px;">Trong cuộc sống hiện đại ngày nay, ung thư, đột quỵ,
+              nhồi máu cơ tim - 3 bệnh hiểm nghèo nguy hiểm...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- footer -->
+  <footer class="ftco-footer">
+    <div class="container mb-5 pb-4">
+      <div class="row">
+        <div class="col-lg col-md-6">
+          <div style="width: 350px;" class="ftco-footer-widget ">
+            <h3 class="logo"><a style="text-decoration: none;" href="../HomePage/HomePage.html"><img
+                  src="../image/logo-footer.png"> Medicine-Foods</a></h3>
+            <p>The website provides information about what to eat and do when you are sick.</p>
+            <ul class="ftco-footer-social list-unstyled mt-4 ">
+              <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2 ">Links</h2>
+            <ul class="list-unstyled ">
+              <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/bht.zakatelly.2122002/"
+                    target="_blank">FaceBook</a></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/"
+                    target="_blank">Instagram</a></i></li>
+              <li><i style="margin-left: -19px;" class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi"
+                    target="_blank">Twitter</a></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2 ">Services</h2>
+            <div id="ServicesFooter">
+              <ul class="list-unstyled">
+                <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="#" class="medicine"
+                      onclick="BuyMedicine();">Buy-Medicine</a></i></li>
+                <li><i style="margin-left: -47px;" class="fa fa-hand-o-right" aria-hidden="true"><a href="../contact/contact.html">Contact</a></i>
+                </li>
+                <li><i style="margin-left: -46px;" class="fa fa-hand-o-right" aria-hidden="true"><a href="../gallery/gallery.html">Gallery</a></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2">Informations</h2>
+            <ul class="list-unstyled ">
+              <li>
+                <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a
+                    href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097"
+                    target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+              </li>
+              <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+              <li>
+                <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                  <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                  <br>
+                  <a style="margin-left: 27px;"
+                    href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                    target="_blank">nhthanh.20it7@vku.udn.vn</a>
+                </i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- add js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+  <script src="HomePage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

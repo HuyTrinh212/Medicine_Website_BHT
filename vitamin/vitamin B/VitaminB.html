@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Medicine-Foods</title>
+        <link rel="stylesheet" href="./../../BootStrap 5.0/css 5.0/bootstrap.min.css">
+        <link rel="stylesheet" href="VitaminB.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./../../image/logo-footer.png" />
+    </head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+          <div style="padding-top: 0px; padding-bottom: 0px;" class="container-fluid">
+            <!-- home -->
+            <div style="margin-left: 150px; display: flex;">
+              <div style="margin-top: 2px;">
+                <a href="./../../HomePage/HomePage.html"><img style="padding-top: 5px;" src="./../../image/logo-footer.png" id="LogoHeader"  width="74px" height="75px" alt=""></a>
+              </div>
+              <div>
+                <h4 style="margin-top: 18px; color: rgb(190, 79, 0); margin-left: 9px; text-align: center; line-height: 24px;">
+                  <a style="text-decoration: none;" href="./../../HomePage/HomePage.html">Medicine-Foods</a><br>
+                  <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+                </h4>
+              </div>
+            </div>
+              <div style="margin-left: 250px;">
+                <div style="height: auto; border-bottom: 0.1px solid black;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- contact -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../contact/contact.html"><b>Contact</b></a>
+                    </li>
+                    <!-- Review -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../gallery/gallery.html"><b>Gallery</b></a>
+                    </li>
+                    <!-- search -->
+                    <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                      <form class="d-flex" onsubmit="return redirect();">
+                        <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                          placeholder="Search" aria-label="Search">
+                        <button style="border-color: transparent;" class="btn btn-outline-success" type="submit"><i
+                            style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search"
+                            aria-hidden="true"></i></button>
+                      </form>
+                    </div>
+                  </ul>
+                </div>
+                <div style="height: auto;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- vitamin -->
+                    <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                      </a>
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="./../vitamin A/VitaminA.html">Vitamin A</a></li>
+                        <li><a class="dropdown-item" href="VitaminB.html">Vitamin B</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin C/VitaminC.html">Vitamin C</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin D/VitaminD.html">Vitamin D</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin E/VitaminE.html">Vitamin E</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin K/VitaminK.html">Vitamin K</a></li>
+                      </ul>
+                    </li>
+                    <!-- minerals -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                      </a>
+                      <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./../../minerals/Axit folic/folic.html">Axit Folic</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/canxi/canxi.html">Canxi</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/sat Fe/Fe.html">Sắt - Fe</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/Crom Cr/crom.html">Crôm - Cr</a></li>
+                      </ul>
+                    </li>
+                    <!-- buy medicine -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                      </a>
+                      <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                        <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                        <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                        <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- main -->
+    <main>
+      <!-- button scroll top -->
+      <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+      <img src="./../../image/top (1).png" onclick="toTop()" id="top">
+
+
+      <!-- hình đầu -->
+      <div class="imgFirst">
+        <img src="./../../image/CaHoiVitaminB.jpg" width="100%" height="400px" alt="">
+        <h1>VITAMIN-B</h1>
+      </div>
+      <!-- thanh xám ô button -->
+      <div style="margin-top: 76px;">
+         <div class="H3Div" style="background-color: rgba(214, 214, 214, 0.342); display: flex;">
+            <div style="margin-left: 51px;">
+              <h5><a href="#What">Vitamin-B là gì?</a></h5>
+            </div>
+            <!-- 2 -->
+            <div>
+              <h5><a href="#CongDung">Công dụng</a></h5>
+            </div>
+            <!-- 3 -->
+            <div>
+              <h5><a href="#NhuCau">Nhu cầu</a></h5>
+            </div>
+            <!-- 4 -->
+            <div>
+              <h5><a href="#CacVanDe">Các vấn đề thường gặp</a></h5>
+            </div>
+            <!-- 5 -->
+            <div>
+              <h5><a href="#LuuY">Những vấn đề cần lưu ý</a></h5>
+            </div>
+            <!-- 6 -->
+            <div style="margin-left: 240px;">
+              <h5 style="color: red;"><a style="color: red;" href="#ReadMore">READ MORE</a> <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+            </div> 
+         </div>
+      </div>
+      <!-- nội dung -->
+      <!-- div bên trái -->
+      <div style="display: flex; margin-top: 35px;">
+        <div style="width: 64%; margin-left: 60px;">
+        <!-- vitamin A là gì -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">VITAMIN-B là gì ?</strong></h5>
+          <p>
+            Theo tiếng Latin, “vita” có nghĩa là sự sống còn “amine” là thành phần hóa học cần thiết cho sự sống. <strong style="color: rgba(6, 142, 184, 0.911);"> Vitamin B </strong> là phức hợp bao gồm 8 loại <strong style="color: rgba(6, 142, 184, 0.911);"> Vitamin B </strong> khác nhau, mỗi loại đều có lợi ích quan trọng đối với cơ thể con người. Nếu bạn dùng một chất bổ sung có đồng thời 8 loại <strong style="color: rgba(6, 142, 184, 0.911);"> Vitamin B </strong> này thì đây được gọi là vitamin B-complex.<br>
+            8 loại này bao gồm:
+            <ul style="margin-top: -10px;">
+              <li>Vitamin B1 (còn được gọi là thiamin)</li>
+              <li>Vitamin B2 (còn gọi là riboflavin)</li>
+              <li>Vitamin B3 (còn được gọi là niacin)</li>
+              <li>Vitamin B5 (còn được gọi là axit pantothenic)</li>
+              <li>Vitamin B6</li>
+              <li>Vitamin B7 (còn được gọi là biotin)</li>
+              <li>Vitamin B12</li>
+              <li>Folate (còn được gọi là vitamin B9 hoặc axit folic nếu ở dạng tổng hợp)</li>
+            </ul>
+            Tám vitamin B có vai trò và tính chất hóa học tương tự mặc dù mỗi loại đều có chức năng chuyên biệt riêng.
+          </p>
+        <!-- Công dụng -->
+          <h5 id="CongDung" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Công dụng của VITAMIN-B</strong></h5>
+          <!-- 1 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Chức năng <strong style="color: rgba(204, 23, 23, 0.849);">VITAMIN-B</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Vitamin B đóng vai trò quan trọng đối với quá trình trao đổi chất, hệ thần kinh, mắt, cơ bắp, các cơ quan, da và tóc.</li>
+              <li>Vitamin B là nguyên liệu cần thiết trong quá trình chuyển hóa thức ăn thành năng lượng và hoạt động điều hòa các phản ứng hóa học trong cơ thể của các enzyme, protein.</li>
+              <li>Các nguồn cung cấp vitamin B tốt nhất là rau, hoa quả, thịt và cá.</li>
+              <li>Vitamin B có thể giảm nguy cơ đột quỵ, đẹp da và tóc: đột quỵ là tình trạng cục máu đông ngăn dòng máu chảy vào não. Bổ sung vitamin B từ thực phẩm hoặc các loại thuốc bổ sung giúp giảm 7% nguy cơ đột quỵ. Vitamin B đóng một vai trò trong sự trao đổi chất và duy trì da, tóc khỏe mạnh.</li>
+            </ul>
+          </p>
+          <!-- 2 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Chức năng <strong style="color: rgba(204, 23, 23, 0.849);">VITAMIN-B1</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Vitamin B1 ngăn chặn bệnh tê phù Beriberi: Những người bị suy dinh dưỡng hoặc uống quá nhiều rượu thường có nguy cơ mắc bệnh beriberi cao. Thiếu hụt vitamin B1 (thiamine) gây ra bệnh tê phù beriberi - một căn bệnh ảnh hưởng đến tim, hệ tiêu hóa và hệ thần kinh. Ngoài ra Vitamin B1 cũng giúp tăng tuần hoàn máu.</li>
+              <li>Vitamin B1 tốt cho hệ thần kinh: Vitamin B1 là một chất chuyển vận thần kinh có dẫn truyền xung đột thần kinh tại hệ thần kinh trung ương (não, tủy sống) cũng như hệ thần kinh ngoại biên. Vai trò của B1 cũng rất quan trọng trong chức năng của cơ nói chung và tim nói riêng, cùng như đối với trí nhớ.</li>
+              <li>Vitamin B1 đối với tế bào: giúp chuyển hóa năng lượng, nhất là chuyển hóa glucid, cho phép và điều hòa khả năng sử dụng glucid.</li>
+            </ul>
+          </p>
+          <!-- 3 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Chức năng <strong style="color: rgba(204, 23, 23, 0.849);">VITAMIN-B6</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Nhu cầu vitamin B6 cần thiết hàng ngày là 1,3 mcg đối với người lớn. Những thực phẩm giàu vitamin B6 bao gồm chuối, đậu, cà rốt, phô mai, thịt gà, đậu lăng, gạo nức, cá ngừ, hạt hướng dương, bột ngũ cốc nguyên hạt, tôm, rau bina và cá hồi.</li>
+              <li>Giúp cơ thể chuyển hóa thức ăn thành năng lượng, giúp cơ thể chống lại nhiễm khuẩn. Phụ nữ mang thai và cho con bú cần cung cấp đủ vitamin B6 giúp phát triển não bộ của trẻ.</li>
+              <li>Vitamin B6 có thể giảm nguy cơ mắc bệnh tim.</li>
+            </ul>
+          </p>
+          <!-- 4 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Chức năng <strong style="color: rgba(204, 23, 23, 0.849);"> Vitamin B9 </strong> (acid Folic)</strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Vitamin B9, còn được gọi là axit folic hoặc folic, giúp tăng trưởng và phát triển của cơ thể.</li>
+              <li>Acid folic - vitamin B9 làm trưởng thành tế bào hồng cầu thông qua việc tổng hợp purine, pyrimidines, đồng thời nó cũng tham gia trong sự phát triển methionine của hệ thần kinh bào thai.</li>
+              <li>Người trưởng thành nên bổ sung 400 mcg folate mỗi ngày. Vitamin B9 được tìm thấy trong các loại rau lá xanh đậm, ngũ cốc, bánh mì, các loại hạt và đậu.</li>
+            </ul>
+          </p>
+          <!-- 5 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Chức năng <strong style="color: rgba(204, 23, 23, 0.849);">Vitamin B12</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Người trưởng thành cần 2,4 mcg vitamin B12 mỗi ngày. Thực vật và các thực phẩm có nguồn gốc thực vật không chứa vitamin B12, vì vậy người ăn chay có thể bị thiếu hụt loại vitamin này. Các nguồn cung cấp vitamin B12 tự nhiên là cá và các sản phẩm từ thịt, men dinh dưỡng và ngũ cốc.</li>
+              <li>Vitamin B12 để ngăn ngừa bệnh thiếu máu: Vitamin B12 giúp các tế bào máu và các tế bào thần kinh luôn khỏe mạnh.</li>
+              <li>Vitamin B12 là tham gia vào việc sửa chữa, tái tạo thần kinh ngoại biên.</li>
+            </ul>
+          </p>
+          <img style="margin-left: 250px;" src="./../../image/AllVitaminB.png" width="45%" alt="">
+        <!-- nhu cầu -->
+          <h5 id="NhuCau" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">NHU CẦU</strong></h5>
+          <!-- 1 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Nhu cầu <strong style="color: rgba(204, 23, 23, 0.849);">Vitamin-B1</strong></strong><br>
+          Vitamin B1 được tìm thấy trong các loại thực phẩm như yến mạch, sữa khô, cam, quả hạch, trứng, các loại hạt, đậu Hà Lan, đậu... Đối với phụ nữ, lượng vitamin B1 được khuyến cáo hàng ngày là 1,1 mg và nam giới là 1,2 mg/ngày. Vitamin B1 cũng giúp tăng tuần hoàn máu.<br>
+          <!-- 2 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Nhu cầu <strong style="color: rgba(204, 23, 23, 0.849);">Vitamin-B6</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Vitamin B6 có trong đậu xanh, cá ngừ, cá hồi, ngũ cốc nguyên hạt, gan bò, thịt bò xay, ức gà, dưa hấu, khoai tây, rau bina.</li>
+              <li>Lượng vitamin B6 cần cho mỗi ngày là 0.5 mg (trẻ 1-3 tuổi) và 0.6mg (trẻ 4-8 tuổi). Nếu trẻ thiếu hụt vitamin B6 thì sẽ bị thiếu máu và có các triệu chứng về da như ban đỏ hoặc vết nứt quanh miệng, nghiêm trọng hơn có thể bị trầm cảm, lơ mơ, buồn nôn, dễ nhiễm trùng và viêm da.</li>
+            </ul>
+          </p>
+          <!-- 3 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Nhu cầu <strong style="color: rgba(204, 23, 23, 0.849);">Vitamin-B9</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Lượng vitamin B9 được khuyến cáo hằng ngày là 150 mg (trẻ 1-3 tuổi) và 200 mg (trẻ 4-8 tuổi).</li>
+              <li>Vitamin B9 có trong thịt, ngũ cốc nguyên hạt, củ cải tía, các loại quả họ cam chanh, cá, ngũ cốc bổ sung, các loại đậu, các loại rau xanh, gan và thận.</li>
+            </ul>
+          </p>
+          <!-- 4 -->
+          <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">1. Nhu cầu <strong style="color: rgba(204, 23, 23, 0.849);">Vitamin-B9</strong></strong><br>
+          <p style="margin-top: -10px;">
+            <ul>
+              <li>Vitamin B12 còn có trong trứng, phô mai, sữa, cá, sò, giáp xác, gan, thận, thịt đỏ.</li>
+              <li>Vitamin B12 có trong thịt và các loại sản phẩm từ sữa, vì vậy những người ăn chay thường dễ mắc các bệnh do thiếu vitamin B12. Nguồn cung cấp duy nhất khi đấy là những loại thực phẩm bổ sung.</li>
+              <li>Lượng vitamin B12 hằng ngày là 0.9 µg (trẻ 1-3 tuổi) và 1.2 µg (trẻ 4-8 tuổi).</li>
+            </ul>
+          </p>
+        <!-- CÁC VẤN ĐỀ THƯỜNG GẶP -->
+              <h5 id="CacVanDe" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">CÁC VẤN ĐỀ THƯỜNG GẶP</strong></h5>
+              <p><strong style="color: red;">VITAMIN-B</strong>
+                có thể gây ra bệnh gì?<br>
+                <div style="display: flex;">
+                  <div style="width: 45%;">
+                    <strong style="color: rgba(71, 71, 71, 0.911); font-size: 21px; font-weight: 600;">Thiếu VITAMIN-B:</strong><br>
+                    <ul style="color: rgba(13, 118, 238, 0.808);">
+                      <li>Tình trạng thiếu máu.(B12)</li>
+                      <li>Mất trí nhớ, hoang tưởng, trầm cảm và thay đổi hành vi.(B12)</li>
+                      <li>Ngứa ran ở bàn chân và bàn tay.(B12)</li>
+                      <li>Cáu kỉnh hoặc trầm cảm và mệt mỏi.(B12)</li>
+                      <li>Rối loạn da, phát ban, nứt quanh miệng.(B6)</li>
+                      <li>Phiền muộn, lú lẫn, Buồn nôn.(B6)</li>
+                      <li>Thiếu máu, dễ bị nhiễm trùng.(B6)</li>
+                      <li>Các vấn đề về tiêu hóa: buồn nôn, đau quặn bụng.(B3)</li>
+                      <li>Thiếu hụt B3 nghiên trọng -> rối loạn tâm thần.</li>
+                    </ul>
+                  </div>
+                  <div style="width: 45%; border-left: 0.5px solid rgba(167, 167, 167, 0.548);">
+                    <strong style="color: rgba(71, 71, 71, 0.911); font-size: 21px; font-weight: 600; margin-left: 30px;">Thừa VITAMIN-B:</strong><br>
+                    <ul style="color: rgba(13, 118, 238, 0.808); margin-left: 30px;">
+                      <li>Người lớn -> bổ sung Vitamin-B6 quá 100 mg/ngay -> tổn hại thần kinh.</li>
+                      <li>Gây tê bàn chân, bàn tay và có thể mất cảm giác.(B6)</li>
+                      <li>Sử dụng B12 liều cao -> sốc phản vệ do dị ứng -> tử vong.</li>
+                      <li>Rối loạn tiêu hóa -> ăn không ngon, chán ăn, buồn nôn...(B12)</li>
+                      <li>Nhức đầu, phát ban, ngứa ngáy.(B12)</li>
+                      <li>Gây tê hay liệt yếu ở tay, chân, cơ mặt.(B12)</li>
+                      <li>Tăng nhịp tim, khó thở, đau ngực, cao huyết áp, suy tim,...(B12)</li>
+                      <li>Tăng nguy cơ ung thư tuyến tiền liệt.(B12)</li>
+                      <li>gây hoạt hóa hệ đông máu làm tăng đông, gây tắc mạch.(B12)</li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+        <!-- những vấn đề cần lưu ý -->
+          <h5 id="LuuY" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">NHỮNG VẤN ĐỀ CẦN LƯU Ý</strong></h5>
+          <p>
+            <!-- 1 -->
+            <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;"> VITAMIN-B1</strong><br>
+            <ul style="margin-top: -13px;">
+              <li>Người bị thiếu vitamin B1 giai đoạn đầu thấy chán ăn, bực bội, thờ ơ và người mệt mỏi. Nếu thiếu vitamin B1 nặng, kéo dài gây ra bệnh tê phù (BeriBeri). Hội chứng Wernicke-Korsakoff là một hội chứng thần kinh - tinh thần cũng hay gặp ở bệnh nhân nghiện rượu gây thiếu vitamin B1 nặng, kéo dài.</li>
+              <li>Vitamin B1 hay thiamine có vai trò trong quá trình chuyển hoá carbohydrate, mỡ, acid amine, đường, rượu. Nếu thiếu loại vitamin này sẽ giảm khả năng chuyển hóa đường (glucose) và hậu quả là giảm năng lượng. Sự thiếu hụt vitamin B1 còn gây ra sự rối loạn trong việc dẫn truyền thần kinh, gây phù nề các tổ chức và giảm khả năng sử dụng oxy (O2) của tế bào. Cơ tim, thần kinh, gan, thận, cơ bắp... là những tổ chức có nhu cầu cao về vitamin B1. Vì vậy, nếu thiếu hụt cấp tính, triệu chứng suy cơ tim cấp xuất hiện đầu tiên, còn các triệu chứng khác xuất hiện từ từ hoặc chỉ xuất hiện rõ khi thiếu vitamin B1 mạn tính.</li>
+              <li>Khi phát hiện thiếu vitamin B1 phải điều trị càng sớm càng tốt. Có thể tiêm hoặc uống vitamin B1, đồng thời thực hiện chế độ dinh dưỡng đầy đủ chất để hỗ trợ điều trị. Muốn phòng bệnh cần ăn gạo không xay xát quá kỹ; chọn các thực phẩm giàu vitamin B1 trong thực đơn hằng ngày như đậu, rau, thịt, cá trứng, sữa; hạn chế uống rượu, thường xuyên bổ sung vitamin B1 cho người nghiện rượu.</li>
+            </ul>
+            <!-- 2 -->
+            <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;">Phòng bệnh <strong style="color: rgba(204, 23, 23, 0.849);">Beriberi</strong></strong><br>
+            <ul>
+              <li>Hạn chế sử dụng các loại đồ uống có cồn cũng giúp giảm thiểu nguy cơ mắc bệnh Beriberi. Những đối tượng nghiện rượu cũng nên được kiểm tra tình trạng thiếu vitamin B1 thường xuyên.</li>
+              <li>Một chế độ dinh dưỡng lành mạnh và cân bằng bao gồm những thực phẩm giàu thiamin là biện pháp phòng bệnh tốt nhất. Các thực phẩm giàu thiamin bao gồm:- Rau xanh; các loại cây họ đậu; thịt; cá; các loại hạt nguyên cám; các loại quả hạch; các sản phẩm bơ sữa.</li>
+              <li>Nhiều sản phẩm ngũ cốc có bổ sung 100% nhu cầu thiamin khuyến nghị hàng ngày.</li>
+              <li>Phụ nữ có thai và cho con bú nên được kiểm tra tình trạng thiếu vitamin định kỳ. Các sản phẩm sữa công thức cho trẻ em nên được bổ sung đủ  nhu cầu thiamin của trẻ.</li>
+            </ul>
+            <!-- 3 -->
+            <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;"> VITAMIN-B6</strong><br>
+            <ul>
+              <li>Nếu người lớn ăn uống đầy đủ chất trong bữa ăn thì ít gặp phải tình trạng thiếu vitamin B6. Có thể lựa chọn những thực phẩm giàu vitamin B6 như: ngũ cốc nguyên hạt, rau xanh, cà chua, chuối, ngô, táo, nho, dứa, cam, gan, thịt, trứng, cá... Tuy nhiên, nếu để thực phẩm quá lâu trong tủ lạnh hay chế biến ở nhiệt độ cao thì hàm lượng vitamin B6 sẽ bị làm giảm đáng kể.</li>
+              <li>Việc thiếu nhóm vitamin B6 sẽ gây ra các cơn động kinh, thiếu máu, bệnh lý thần kinh.</li>
+            </ul>
+            <!-- 4 -->
+            <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;"> VITAMIN-B9</strong><br>
+            <ul>
+              <li>Việc bổ sung acid folic phải được thực hiện dưới sự theo dõi chặt chẽ của các bác sĩ trong điều trị thiếu máu ác tính nguyên hồng cầu khổng lồ. Vì triệu chứng thiếu acid folic dễ che lấp triệu chứng thiếu hụt vitamin B12 nên thường người ta dùng B12 trước để điều trị thiếu máu ác tính, nếu không hiệu quả sẽ chuyển sang dùng acid folic.</li>
+              <li>Nguồn thực phẩm chứa nhiều vitamin B9: gan, thận, rau xanh, phô mai, nấm, các loại đậu, súp lơ, cam, chuối, gạo, men bia...</li>
+              <li>Việc thiếu acid folic là nguyên nhân gây ra các bệnh thiếu máu hồng cầu to, khiếm khuyết ống thần kinh bào thai và lú lẫn tinh thần. Khi cơ thể thiếu vitamin B9 có các triệu chứng: giảm trí nhớ, bị thiếu máu, suy nhược, da nứt... cũng có thể dẫn đến các vấn đề nghiêm trọng như tim đập nhanh, dị tật bào thai, bệnh loãng xương, ung thư ruột và giảm bạch cầu, thậm chí có thể dẫn tới vô sinh.</li>
+            </ul>
+            <!-- 5 -->
+            <strong style="color: rgba(6, 142, 184, 0.911); font-size: 21px; font-weight: 600;"> VITAMIN-B12</strong><br>
+            <ul>
+              <li>Vitamin B12 có nhiều trong thức ăn động vật như trứng, thịt cừu, thịt gà. Ngoài ra, các loại thực phẩm như sữa, sữa chua, nấm cũng chứa hàm lượng cao vitamin này. Khi bổ sung bằng thực phẩm mà cơ thể vẫn thiếu vitamin B12 thì cần phải bổ sung bằng thuốc. Việc uống thuốc cần phải được bác sĩ chỉ định.</li>
+              <li>Thiếu vitamin B12 dẫn đến thiếu cobalamine và là nguyên nhân gây ra các bệnh lý thần kinh ngoại biên. Thiếu hụt vitamin B12 cũng liên quan đến bệnh lý thần kinh tiểu đường. Ở những bệnh nhân tiểu đường sự thiếu hụt vitamin này có thể là do chính căn bệnh tiểu đường hay do việc sử dụng các thuốc điều trị đường huyết như metformine. Ở những bệnh nhân suy thận, bệnh lý thần kinh ngoại biên cũng là do sự thiếu hụt vitamin B12.</li>
+            </ul>
+          </p>
+        </div>
+        <!-- div bên phải -->
+        <!-- quảng cáo, đọc thêm -->
+        <div style="width: 30%; border-left: 1px solid rgba(182, 182, 182, 0.445);">
+          <!-- liên quan 1 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/nhi/bieu-hien-thieu-vitamin-b1-o-tre-em-va-cach-khac-phuc/?link_type=related_posts"><img src="./../../image/vitamin B qcao 1.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/nhi/bieu-hien-thieu-vitamin-b1-o-tre-em-va-cach-khac-phuc/?link_type=related_posts">Biểu hiện thiếu vitamin B1 ở trẻ em và cách khắc phục</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Thiếu vitamin B1 ở trẻ em là nguyên nhân dẫn đến tình trạng thấp còi...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6px; width: 90%; margin-left: 27px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 2 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dinh-duong/8-loai-ngu-coc-khong-chua-gluten-sieu-tot-cho-suc-khoe/?link_type=related_posts"><img src="./../../image/vitamin B qcao 2.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dinh-duong/8-loai-ngu-coc-khong-chua-gluten-sieu-tot-cho-suc-khoe/?link_type=related_posts">8 loại ngũ cốc không chứa gluten siêu tốt cho sức khỏe</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Gluten là một loại protein thường được tìm thấy trong lúa mì, lúa mạch...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6px; width: 90%; margin-left: 27px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 3 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/hoi-dap-bac-si/be-bu-me-it-di-co-phai-do-anh-huong-cua-men-vi-sinh-enterogermina-khong/?link_type=related_posts"><img src="./../../image/vitamin B qcao 3.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/hoi-dap-bac-si/be-bu-me-it-di-co-phai-do-anh-huong-cua-men-vi-sinh-enterogermina-khong/?link_type=related_posts">Bé bú mẹ ít đi có phải do ảnh hưởng của men vi sinh Enterogermina không?</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">TMen vi sinh Enterogermina giúp...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6.5px; width: 90%; margin-left: 27px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 4 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dinh-duong/nguy-co-mac-benh-benh-beriberi-do-thieu-vitamin-b1/?link_type=related_posts"><img src="./../../image/vitamin B qcao 4.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dinh-duong/nguy-co-mac-benh-benh-beriberi-do-thieu-vitamin-b1/?link_type=related_posts">Nguy cơ mắc bệnh bệnh Beriberi do thiếu B1</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Vitamin B1 có vai trò quan trọng đối với nhiều các cơ quan trong cơ thể...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6px; width: 90%; margin-left: 27px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 5 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/vi-sao-can-uong-vitamin-tong-hop-va-acid-folic-vitamin-b9-truoc-khi-mang-thai/?link_type=related_posts"><img src="./../../image/vitamin B qcao 5.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/vi-sao-can-uong-vitamin-tong-hop-va-acid-folic-vitamin-b9-truoc-khi-mang-thai/?link_type=related_posts">Vì sao cần uống Vitamin tổng hợp và Acid folic trước khi mang thai?</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Bài viết được tư vấn chuyên môn...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6.5px; width: 90%; margin-left: 27px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- thẻ hr -->
+          <hr style="width: 95%; margin-left: 20px;">
+
+          <!-- Dsach các bài viết liên quan -->
+          <img style="margin-left: 90px;" src="./../../image/vitamin_B-removebg-preview.png" width="60%" alt="">
+          <div id="ReadMore" class="LienQuan">
+              <h5 style="margin: 10px;"><i class="fa fa-list-ul" aria-hidden="true"></i> <strong style="color: rgba(21, 21, 226, 0.822); font-weight: 500;">Danh sách các bài viết liên quan.</strong> </h5>
+              <!-- 1 -->
+              <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/dinh-duong/co-nen-ca-trich-song/?link_type=related_posts">
+                    Có nên ăn cá trích sống?
+                  </a> 
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/san-phu-khoa-va-ho-tro-sinh-san/tai-sao-phai-bo-sung-axit-folic-cho-me-bau-lieu-luong-su-dung/?link_type=related_posts"> 
+                    Tại sao phải bổ sung axit folic cho mẹ bầu? Liều lượng sử dụng
+                  </a>
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/hoi-dap-bac-si/te-phu-va-yeu-hai-chan-la-dau-hieu-benh-bai-liet-chan-tay/?link_type=related_posts">
+                    Tê phù và yếu hai chân là dấu hiệu bệnh bại liệt chân tay?
+                  </a>
+                </p>
+              </div>
+              <!-- 4 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/dinh-duong/loi-ich-suc-khoe-cua-vitamin-b5/?link_type=related_posts">
+                    Lợi ích sức khỏe của Vitamin B5
+                  </a>
+                </p>
+              </div>
+              <!-- 5 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/dinh-duong/tieu-duong-thai-ky-co-duoc-mit-khong/?link_type=related_posts">
+                    Tiểu đường thai kỳ có được ăn mít không?
+                  </a>
+                </p>
+              </div>
+              <!-- 6 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/thieu-hut-vitamin-o-nguoi-nghien-ruou/?link_type=related_posts">
+                    Thiếu hụt vitamin ở người nghiện rượu
+                  </a>
+                </p>
+              </div>
+              <!-- 7 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/dinh-duong/cach-thuong-thuc-ngu-coc-nguyen-hat-nhieu-hon-trong-che-do-uong-cua-ban/?link_type=related_posts">
+                    Cách thưởng thức ngũ cốc nguyên hạt nhiều hơn trong chế độ ăn uống của bạn
+                  </a>
+                </p>
+              </div>
+              <!-- 8 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/dinh-duong/loi-ich-suc-khoe-cua-qua-nhan/?link_type=related_posts">
+                    Lợi ích quả nhãn đối với sức khỏe
+                  </a>
+                </p>
+              </div>
+              <!-- 9 -->
+              <div class="DSachLquan" style="width: 90%;">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/suc-khoe-tong-quat/tu-van-bac-si/dung-vitamin-b1-va-vitamin-c-cung-luc-vao-buoi-sang-truoc-khi-an-duoc-khong/?link_type=related_posts">
+                    Dùng Vitamin B1 và Vitamin C cùng lúc vào buổi sáng trước khi ăn được không?
+                  </a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </main>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <footer class="ftco-footer">
+      <div class="container mb-5 pb-4">
+          <div class="row">
+              <div class="col-lg col-md-6">
+                  <div style="width: 350px;" class="ftco-footer-widget ">
+                      <h3 class="logo"><a style="text-decoration: none;" href="./../../HomePage/HomePage.html"><img src="./../../image/logo-footer.png"> Medicine-Foods</a></h3>
+                      <p>The website provides information about what to eat and do when you are sick.</p>
+                      <ul class="ftco-footer-social list-unstyled mt-4 ">
+                          <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                          <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Links</h2>
+                      <ul class="list-unstyled ">
+                          <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></i></li>
+                          <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/" target="_blank">Instagram</a></i></li>
+                          <li><i class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi" target="_blank">Twitter</a></i></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Services</h2>
+                      <div id="ServicesFooter">
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a  href="#" class="medicine" onclick="BuyMedicine();" >Buy-Medicine</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../contact/contact.html">Contact</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../gallery/gallery.html">Gallery</a></i></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                <div class="ftco-footer-widget ">
+                    <h2 class="ftco-heading-2">Informations</h2>
+                    <ul class="list-unstyled ">
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097" target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+                      </li>
+                      <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                          <br>
+                          <a style="margin-left: 27px;"
+                            href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                            target="_blank">nhthanh.20it7@vku.udn.vn</a>
+                        </i>
+                      </li>  
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- add js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./../../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+    <script src="VitaminB.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+</html>

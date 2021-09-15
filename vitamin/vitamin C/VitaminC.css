@@ -1,0 +1,359 @@
+/* phần header */
+*{
+    margin: 0 auto;
+}
+/* button scrollTop */
+#top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    width: 70px; 
+    height: 70px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#top {
+    transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    opacity: 1;
+    display:none;
+    cursor: pointer;
+}
+#top:hover{
+    opacity: 1;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+body{
+    background-color: rgba(211, 223, 233, 0.247) !important;
+}
+.header{
+    border: 0px solid rgba(87, 87, 87, 0.815);
+    /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.877); */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+}
+.bg-light{
+    /* background-color: rgba(184, 210, 218, 0.815); */
+    background-image: linear-gradient(to right, rgba(175, 226, 235, 0.493), rgba(241, 215, 215, 0.5));
+}
+.navbar{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.nav-link b{
+    font-size: 15px;
+}
+/* auto dropdown */
+#navbarSupportedContent li:hover .dropdown-menu{
+    display: block;
+}
+.NameLogoHeader{
+    font-size: 15px; 
+    text-align: right;
+    color: rgb(184, 138, 78);
+    filter: drop-shadow(0 0 2px rgba(194, 156, 107, 0.651));
+}
+/* hover smooth header */
+.navbar-nav ul{
+	-webkit-font-smoothing: antialiased;
+	list-style: none;
+}
+.navbar-nav li:hover .dropdown-item{
+	background: #8cb8cc8c;
+	color:#FFF;
+}
+.navbar-nav a {
+	display: block;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.navbar-nav li ul {
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.navbar-nav li:hover ul {
+	opacity: 1;
+	visibility: visible;
+    margin-left: -34px;
+}
+.navbar-nav li ul a:hover {
+	background: rgba(207, 44, 44, 0.788) !important;
+    color: black !important;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.ChuVitaminA{
+    width: 600px; height: 350px; 
+    position: absolute; 
+    margin: 50px 0px 0px 150px; 
+    background-color: rgba(185, 211, 216, 0.295);
+    border-radius: 30px;
+}
+.ChuVitaminA img:hover{
+    transform: scale(1.03);
+}
+.H3Div h5{
+    text-align: left;
+    margin: 16px 10px 13px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.H3Div a{
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+/* .H3Div h5:hover{
+    transform: scale(0.95);
+} */
+.H3Div div{
+    margin: 0px 0px 0px 22px;
+}
+.H3Div div:hover{
+    background-color: rgba(245, 245, 245, 0.616);
+    border-bottom: 2px solid rgba(136, 20, 20, 0.671);
+}
+/* liên quan */
+.LienQuan{
+    width: 90%; 
+    border: 1px solid rgba(172, 172, 172, 0.568); 
+    margin: 15px 0px 0px 24px; 
+    border-radius: 10px; 
+    background-color: rgba(247, 241, 241, 0.11);
+}
+/* danh sách các bài viết liên quan */
+.DSachLquan a{
+    text-decoration: none; 
+    color: rgba(82, 82, 82, 0.986);
+}
+.DSachLquan a:hover{
+    color: rgba(211, 59, 59, 0.87);
+}
+/* hình đầu */
+.imgFirst{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.imgFirst img {
+    position: absolute;
+}
+.imgFirst h1 { 
+    font-size: 180px; margin-top: 80px;
+    mix-blend-mode: overlay;
+}
+/* hover tin tức */
+.DivTinTuc1:hover .HoverTinTuc a{
+    color: rgb(0, 116, 194) !important;
+}
+/* hover tin tức */
+/* 1 */
+.DivTinTuc1{
+    overflow: hidden;
+    display:inline-block;
+    width: 93%; display: flex;
+    margin-top: 9px;
+}
+.DivTinTuc1::after{
+    display:block;
+    content: '';
+    border-top: solid 6px #0092a8;  
+    transform: scaleX(0);  
+    transition: transform 400ms ease-in-out;
+}
+.DivTinTuc1:hover::after {
+    transform: scaleX(1); 
+    filter: drop-shadow(0 0 4px rgba(22, 162, 180, 0.829));
+}
+/* HOVER IMG tin tức */
+.IMG{
+    overflow: hidden;
+    border-radius: 5px;
+    border-bottom: 3.5px solid green;
+}
+.IMG img:hover{
+    transform: scale(1.2);
+}
+.IMG img{
+    transition: transform .6s ease;
+}
+.TinTuc div:hover p{
+    color: blue; 
+}
+.TinTuc:hover .DivTinTuc1{ 
+    border: 1px solid rgba(189, 138, 138, 0.541) !important;
+    transform: scale(1.03);
+    border-bottom: 3px solid red !important;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* phần footer */
+.col-md-6{
+    text-align: center;
+}
+.logo img{
+    width: 90px;
+    height: 92px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 5px rgb(122, 0, 0));
+}
+.ftco-footer {
+    font-size: 16px;
+    background: #141414;
+    padding: 7em 0 0;
+    z-index: 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden
+}
+.ftco-footer:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 61%;
+    content: '';
+    background: rgba(255, 255, 255, .03);
+    -webkit-transform: matrix(1, 0, .5, 1, 150, 0);
+    -ms-transform: matrix(1, 0, .5, 1, 150, 0);
+    transform: matrix(1, 0, .5, 1, 150, 0);
+    z-index: -1
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.ftco-footer .ftco-footer-widget ul {
+    margin: 0;
+    padding: 0
+}
+.ftco-footer .ftco-footer-widget ul li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, .5)
+}
+.ftco-footer .ftco-footer-widget ul li a {
+    color: rgba(255, 255, 255, .5)
+}
+.ftco-footer .ftco-footer-widget ul li a span {
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px
+}
+.ftco-footer .ftco-footer-widget ul li a:hover {
+    color: #ffa931
+}
+.ftco-footer-widget p{
+    margin-top: 35px;
+}
+.ftco-footer-widget h2{
+    color: #c7b08f !important;
+}
+.ftco-footer a {
+    color: rgba(0, 0, 0, .7);
+    color: #ffa931
+}
+.ftco-footer p{
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+.ftco-footer a:hover {
+    color: #fff
+}
+.ftco-footer .ftco-heading-2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.ftco-footer .logo a {
+    color: #ffa931
+}
+.ftco-footer .logo a span.flaticon {
+    font-size: 24px;
+    line-height: 1
+}
+.ftco-footer .bg-primary {
+    background: #111!important;
+    position: relative;
+    z-index: 0
+}
+.ftco-footer .bg-primary p {
+    color: rgba(255, 255, 255, .7);
+}
+.ftco-footer .bg-primary p a {
+    color: #fff;
+    text-decoration: underline
+}
+.ftco-footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block
+}
+.ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #ffa931;
+    position: relative;
+    border-radius: 4px
+}
+.ftco-footer-social li a span {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff!important
+}
+.list-unstyled li{
+    font-size: 19px;
+    line-height: 50px;
+}
+.list-unstyled a{
+    text-decoration: none; /* xóa bỏ gạch chân of link */
+    margin-left: 9px;
+}
+.nav-item{
+    margin-left: 45px;
+    font-size: 21px;
+}
+
+

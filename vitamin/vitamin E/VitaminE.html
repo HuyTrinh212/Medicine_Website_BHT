@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Medicine-Foods</title>
+        <link rel="stylesheet" href="./../../BootStrap 5.0/css 5.0/bootstrap.min.css">
+        <link rel="stylesheet" href="VitaminE.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./../../image/logo-footer.png" />
+    </head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+          <div style="padding-top: 0px; padding-bottom: 0px;" class="container-fluid">
+            <!-- home -->
+            <div style="margin-left: 150px; display: flex;">
+              <div style="margin-top: 2px;">
+                <a href="./../../HomePage/HomePage.html"><img style="padding-top: 5px;" src="./../../image/logo-footer.png" id="LogoHeader"  width="74px" height="75px" alt=""></a>
+              </div>
+              <div>
+                <h4 style="margin-top: 18px; color: rgb(190, 79, 0); margin-left: 9px; text-align: center; line-height: 24px;">
+                  <a style="text-decoration: none;" href="./../../HomePage/HomePage.html">Medicine-Foods</a><br>
+                  <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+                </h4>
+              </div>
+            </div>
+              <div style="margin-left: 250px;">
+                <div style="height: auto; border-bottom: 0.1px solid black;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- contact -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../contact/contact.html"><b>Contact</b></a>
+                    </li>
+                    <!-- Review -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./../../gallery/gallery.html"><b>Gallery</b></a>
+                    </li>
+                    <!-- search -->
+                    <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                      <form class="d-flex" onsubmit="return redirect();">
+                        <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                          placeholder="Search" aria-label="Search">
+                        <button style="border-color: transparent;" class="btn btn-outline-success" type="submit"><i
+                            style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search"
+                            aria-hidden="true"></i></button>
+                      </form>
+                    </div>
+                  </ul>
+                </div>
+                <div style="height: auto;">
+                  <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- vitamin -->
+                    <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                      </a>
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="VitaminA.html">Vitamin A</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin B/VitaminB.html">Vitamin B</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin C/VitaminC.html">Vitamin C</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin D/VitaminD.html">Vitamin D</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin E/VitaminE.html">Vitamin E</a></li>
+                        <li><a class="dropdown-item" href="./../vitamin K/VitaminK.html">Vitamin K</a></li>
+                      </ul>
+                    </li>
+                    <!-- minerals -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                      </a>
+                      <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./../../minerals/Axit folic/folic.html">Axit Folic</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/canxi/canxi.html">Canxi</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/sat Fe/Fe.html">Sắt - Fe</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                        <li><a class="dropdown-item" href="./../../minerals/Crom Cr/crom.html">Crôm - Cr</a></li>
+                      </ul>
+                    </li>
+                    <!-- buy medicine -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                      </a>
+                      <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                        <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                        <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                        <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                        <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- main -->
+    <main>
+      <!-- button scroll top -->
+      <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+      <img src="./../../image/top (1).png" onclick="toTop()" id="top">
+      
+      <!-- hình đầu -->
+      <div class="imgFirst">
+        <img src="./../../image/hanhnhan1.jpg" width="100%" height="400px" alt="">
+        <h1>VITAMIN-E</h1>
+      </div>
+      <!-- thanh xám ô button -->
+      <div style="padding-top: 96px;">
+         <div class="H3Div" style="background-color: rgba(214, 214, 214, 0.342); display: flex;">
+            <!-- 1 -->
+            <div style="margin-left: 51px;">
+              <h5><a href="#What">Vitamin-E là gì?</a></h5>
+            </div>
+            <!-- 2 -->
+            <div>
+              <h5><a href="#CongDung">Công dụng</a></h5>
+            </div>
+            <!-- 3 -->
+            <div>
+              <h5><a href="#NhuCau">Nhu cầu</a></h5>
+            </div>
+            <!-- 4 -->
+            <div>
+              <h5><a href="#CacVanDe">Các vấn đề thường gặp</a></h5>
+            </div>
+            <!-- 5 -->
+            <div>
+              <h5><a href="#LuuY">Những vấn đề cần lưu ý</a></h5>
+            </div>
+            <!-- 6 -->
+            <div style="margin-left: 240px;">
+              <h5 style="color: red;"><a style="color: red;" href="#ReadMore">READ MORE</a> <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+            </div>   
+         </div>
+      </div>
+      <!-- nội dung -->
+      <!-- div bên trái -->
+      <div style="display: flex; margin-top: 35px;">
+        <div style="width: 66%; margin-left: 60px; padding-right: 20px;">
+          <!-- vitamin A là gì -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">VITAMIN-E là gì ?</strong></h5>
+          <p><strong style="color: red;">VITAMIN-E </strong> 
+            là chất lỏng màu vàng nhạt, tan trong cồn và trong dầu, không tan trong nước. Vitamin E chịu được nhiệt độ khá cao, không bị phá hủy khi nấu nướng, nhưng bị phân hủy nhanh chóng bởi tia tử ngoại.
+          </p>
+          <p><strong style="color: red;">VITAMIN-E </strong> 
+            có hai nhóm chính là Tocopherol và Tocotrienol, trong đó nhóm Tocopherol có vai trò quan trọng hơn. Alphatocopherol là chất có hoạt tính mạnh nhất trong các loại Vitamin E và cũng là loại được phân bổ rộng rãi nhất trong các thực phẩm tự nhiên.
+          </p>
+          <!-- Công dụng -->
+          <h5 id="CongDung" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Công dụng của VITAMIN-E</strong></h5>
+          <p><strong style="color: red;">VITAMIN-E</strong> có nhiều vai trò quan trọng đối với cơ thể:<br>
+            <ul style="margin-top: -10px;">
+              <li>Ngăn cản oxy hóa các thành phần thiết yếu trong tế bào, ngăn cản sự tạo thành các sản phẩm oxy hóa độc hại đối với cơ thể.</li>
+              <li>Giúp tăng hấp thu <strong style="color: red;">VITAMIN-A </strong> , bảo vệ vitamin A khỏi bị thoái hóa. <strong style="color: red;">VITAMIN-E </strong> cũng bảo vệ chống lại tác dụng của chứng thừa <strong style="color: red;">VITAMIN-A </strong>.</li>
+              <li>Tham gia tạo quá trình tạo máu. Đặc tính chống oxy hóa của <strong style="color: red;">VITAMIN-E </strong> giúp quá trình sản xuất ra hồng cầu diễn ra trôi chảy.</li>       
+              <li>Giúp cơ thể hấp thu <strong style="color: red;">VITAMIN-K</strong>.</li>
+              <li>Ngăn ngừa xơ vữa động mạch do làm giảm sự oxy hóa các protein, ngăn các protein này tham gia làm tắc nghẽn mạch máu.</li>
+              <li>Ngăn ngừa nguy cơ tim mạch, như nhồi máu cơ tim, tai biến mạch máu não do làm giảm cholestetol LDL trong mạch máu.</li>
+              <li>Tăng sức đề kháng của cơ thể, làm chậm tiến triển của bệnh sa sút trí tuệ.</li>
+              <li>Làm giảm nguy cơ đục thủy tinh thể nhờ khả năng chống oxy hóa.</li>
+              <li><strong style="color: red;">VITAMIN-E </strong> có nhiều trong các sản phẩm chăm sóc sắc đẹp do có nhiều tác dụng trong cải thiện, phục hồi làn da. Vitamin E giúp dưỡng ẩm cho da, giúp da hạn chế tác dụng của tia UV, giúp phục hồi tóc hư tổn, dưỡng tóc suôn mượt, chắc khỏe, mau mọc.</li>
+            </ul>
+          </p>
+          <!-- nhu cầu -->
+          <h5 id="NhuCau" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">NHU CẦU</strong></h5>
+          <p>
+            Phụ nữ cho con bú cần 19mg vitamin E/ ngày. Nhu cầu <strong style="color: red;">VITAMIN-E</strong> ở trẻ còn bú mẹ là 3mg/ ngày, lượng <strong style="color: red;">VITAMIN-E</strong> này được cung cấp đủ qua sữa mẹ, không cần bổ sung thêm cho trẻ.
+          </p>
+          <p style="text-align: center;">
+            <strong>Bảng nhu cầu Vitamin E khuyến nghị</strong>
+          </p>
+          <img style="margin-left: 36px;" src="./../../image/nhucauvitaminE.png" width="92%" alt="">
+          <p style="margin-top: 15px;">
+            Trong điều trị thiếu <strong style="color: red;">VITAMIN-E</strong>:
+            <ul style="margin-top: -10px;">
+              <li>Trẻ em: 1UI/ngày.</li>
+              <li>Người lớn: 60UI/ngày.</li>
+            </ul>
+          </p>
+          <p>
+            Trong phòng ngừa thiếu <strong style="color: red;">VITAMIN-E</strong>:
+            <ul style="margin-top: -10px;">
+              <li>Người lớn: 30UI/ngày.</li>
+            </ul>
+          </p>
+    
+          <!-- CÁC VẤN ĐỀ THƯỜNG GẶP -->
+              <h5 id="CacVanDe" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">CÁC VẤN ĐỀ THƯỜNG GẶP</strong></h5>
+              <p><strong style="color: red;">VITAMIN-E</strong>
+                có thể gây ra bệnh gì?<br>
+                <div style="display: flex;">
+                  <div style="width: 45%;">
+                    <strong style="color: rgba(71, 71, 71, 0.911); font-size: 21px; font-weight: 600;">Thiếu VITAMIN-E:</strong><br>
+                    <ul style="color: rgba(13, 118, 238, 0.808);"> 
+                      <li>Làm yếu cơ bắp.</li>
+                      <li>Ảnh hưởng thị lực.</li>
+                      <li>Gây sẩy thai.</li>
+                      <li>Gây thiếu máu.</li>
+                      <li>Rối loạn thần kinh.</li>
+                    </ul>
+                  </div>
+                  <div style="width: 45%; border-left: 0.5px solid rgba(167, 167, 167, 0.548);">
+                    <strong style="color: rgba(71, 71, 71, 0.911); font-size: 21px; font-weight: 600; margin-left: 60px;">Thừa VITAMIN-E:</strong><br>
+                    <ul style="color: rgba(13, 118, 238, 0.808); margin-left: 60px;">
+                      <li>Nhiễm độc vitamin E.</li>
+                      <li>Tổn hại tế bào.</li>
+                      <li>Khống chế các tác nhân chống lão hóa khác.</li>
+                      <li>Tiêu chảy, rối loạn tiêu hóa.</li>
+                      <li>Loãng máu và dẫn đến tử vong.</li>
+                      <li>Cản trở quá trình đông máu.</li>
+                      <li>Tăng nguy cơ đột quỵ do xuất huyết.</li>
+                      <li>Đột quỵ do chảy máu trong não.</li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+              
+          <!-- những vấn đề cần lưu ý -->
+          <h5 id="LuuY" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); margin: 25px 0px 6px 0px; height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">NHỮNG VẤN ĐỀ CẦN LƯU Ý</strong></h5>
+          <p>
+            <!-- 1 -->
+            <strong style="color: rgba(0, 140, 165, 0.911); font-size: 21px; font-weight: 600;">1. Làm suy yếu cơ bắp khi thiếu <strong style="color: red; font-size: 21px; font-weight: 600;">VITAMIN-E</strong></strong><br>
+            <ul style="margin-top: -13px;">
+              <li>Nếu không có vitamin E, màng sinh chất - vốn có chức năng bảo toàn tế bào và kiểm soát những thử vào ra tế bào, không thể làm lành đúng cách.</li>
+              <li>Đây là một vấn đề lớn đối với nhiều tế bào, chẳng hạn như tế bào cơ, bị rách màng khi sử dụng.</li>
+            </ul>
+            <!-- 2 -->
+            <strong style="color: rgba(0, 140, 165, 0.911); font-size: 21px; font-weight: 600;">2. Tương tác thuốc bổ sung <strong style="color: red; font-size: 21px; font-weight: 600;">VITAMIN-E</strong></strong><br>
+            <strong style="line-height: 40px; color: rgba(117, 81, 81, 0.911);">Khi sử dụng <strong style="color: red;">VITAMIN-E</strong> cùng các thuốc khác cần thận trọng trong những trường hợp:</strong><br>
+            <ul>
+              <li>Khi dùng cùng với cyclosporine (neoral, sandimmune): sử dụng liều cao <strong style="color: red;">VITAMIN-E</strong> có thể làm tăng hấp thu cyclosporine của cơ thể, từ đó làm tăng tác dụng cũng như các tác dụng không mong muốn của cyclosporine.</li>
+              <li>Các thuốc chuyển hóa qua gan (chu trình cytochrome P450 3A4) : sử dụng <strong style="color: red;">VITAMIN-E</strong> đồng thời với các thuốc chuyển hóa qua gan có thể làm tăng quá trình chuyển hóa thuốc, từ đó làm giảm hiệu lực của thuốc. Một số thuốc chuyển hóa qua gan có thể bị ảnh hưởng là: lovastatin, ketoconazole, itraconazole, fexofenadine, triazolam và nhiều thuốc khác.</li>
+              <li>Các thuốc chống ngưng tập tiểu cầu: vitamin E có tác dụng làm chậm quá trình đông máu, do đó nếu sử dụng cùng các thuốc có tác dụng chống ngưng tập tiểu cầu sẽ xảy ra nguy cơ chảy máu. Các thuốc đó là: aspirin, clopidogrel, diclofenac, ibuprofen, naproxen, dalteparin, enoxaparin, heparin, warfarin,...</li>
+            </ul>
+            <!-- 3 -->
+            <strong style="color: rgba(0, 140, 165, 0.911); font-size: 21px; font-weight: 600;">3. Bệnh Alzheimer</strong><br>
+            <ul>
+              <li><strong style="color: red;">VITAMIN-E</strong> có thể làm chậm quá trình mất trí nhớ ở bệnh nhân mắc bệnh mức độ trung bình.</li>
+              <li>Bên cạnh đó <strong style="color: red;">VITAMIN-E</strong> cũng có khả năng làm chậm quá trình tiến triển chung của bệnh, giúp bệnh nhân mắc bệnh ở mức độ nhẹ và trung bình kéo dài khoảng thời gian có thể tự chăm sóc bản thân trước khi cần nhờ cậy đến sự chăm sóc từ người khác.</li>
+              <li><strong style="color: red;">VITAMIN-E</strong> không thể ngăn chặn hoàn toàn tiến triển của bệnh.</li>
+            </ul>
+          </p>
+        </div>
+
+        <!-- div bên phải -->
+        <!-- quảng cáo, đọc thêm -->
+        <div style="width: 30%; border-left: 1px solid rgba(182, 182, 182, 0.445);">
+          <!-- liên quan 1 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 103px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/vitamin A qcao 1.png" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Uống vitamin A có tác dụng gì cho trẻ?</a>
+                </b>
+             </h6>
+              <p style="font-size: 12.5px;">Bài viết được tư vấn chuyên môn bởi Bác sĩ chuyên khoa II Hồ Viết Lệ Diễm...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -6px; width: 90%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 2 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 101px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/tac-hai-khi-thua-hoac-thieu-vitamin/"><img src="./../../image/vitamin a qcao 2.jpg" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/tac-hai-khi-thua-hoac-thieu-vitamin/">Tác hại khi thừa hoặc thiếu Vitamin A</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Bài viết được tư vấn chuyên môn bởi Bác sĩ chuyên khoa II Hồ Viết Lệ Diễm...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -7px; width: 90%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 3 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 101px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/vi-sao-sau-uong-vitamin-thop-tre-co-bi-phong/"><img src="./../../image/vitamin A qcao 3.png" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/vi-sao-sau-uong-vitamin-thop-tre-co-bi-phong/">Vì sao sau uống vitamin A, thóp trẻ có thể bị phồng?</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Thóp phồng sau khi trẻ uống vitamin A là một tác dụng phụ nhẹ, triệu chứng...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -7px; width: 90%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 4 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 99px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/vitamin-trong-che-do-cua-tre/"><img src="./../../image/vitamin A qcao 4.png" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/vitamin-trong-che-do-cua-tre/">Vitamin A trong chế độ ăn của trẻ</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Trên toàn thế giới, trẻ em thiếu vitamin A lâm sàng có nhiều khả năng...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -9px; width: 90%; margin-left: 25px; height: 1.5px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 5 -->
+          <div class="DivTinTuc1">
+            <div style="width: 40%; height: 101px; width: 38%;" class="IMG">
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/dau-hieu-thieu-vitamin-va-cach-dieu-tri/"><img src="./../../image/vitamin A qcao 5.png" width="100%" height="100%" alt=""></a>
+            </div>
+            <div style="width: 55%;">
+              <h6 style="margin-top: 5px;">
+                <b class="HoverTinTuc">
+                  <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/dau-hieu-thieu-vitamin-va-cach-dieu-tri/">Dấu hiệu thiếu Vitamin A và cách điều trị</a>
+                </b>
+              </h6>
+              <p style="font-size: 12.5px;">Bài viết bởi Bác sĩ Ma Văn Thấm và Bác sĩ Nguyễn Nam Phong, Khoa Nhi...</p>
+            </div>
+          </div>
+          <hr style="margin-top: -7px; width: 90%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- thẻ hr -->
+          <hr style="width: 92%; margin-left: 20px; margin-top: 12px;">
+          
+          <!-- Dsach các bài viết liên quan -->
+          <img style="margin-left: 96px;" src="./../../image/vitamin_E-removebg-preview.png" width="54%" alt="">
+          <div id="ReadMore" class="LienQuan">
+              <h5 class="hello" style="margin: 10px;"><i class="fa fa-list-ul" aria-hidden="true"></i> <strong style="color: rgba(21, 21, 226, 0.822); font-weight: 500;">Danh sách các bài viết liên quan.</strong> </h5>
+              <!-- 1 -->
+              <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                    Những điều cần biết khi cho trẻ đeo kính áp tròng
+                  </a> 
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/vitamin-trong-che-do-cua-tre/?link_type=related_posts"> 
+                    Vitamin A trong chế độ ăn của trẻ
+                  </a>
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/mu-ban-ngay-la-benh-gi/?link_type=related_posts">
+                    Mù ban ngày là bệnh gì?
+                  </a>
+                </p>
+              </div>
+              <!-- 4 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/nhi/vai-tro-cua-vitamin-trong-tang-cuong-mien-dich-va-tang-truong-o-tre-em/?link_type=related_posts">
+                    Vai trò của vitamin A trong tăng cường miễn dịch và tăng trưởng ở trẻ em
+                  </a>
+                </p>
+              </div>
+              <!-- 5 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/hoi-dap-bac-si/lam-sao-de-ngan-ngua-benh-quang-ga-tien-trien-nang-hon/?link_type=related_posts">
+                    Làm sao để ngăn ngừa bệnh quáng gà tiến triển nặng hơn?
+                  </a>
+                </p>
+              </div>
+              <!-- 6 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/benh-zona-than-kinh-co-lay-khong/?link_type=related_posts">
+                    Bệnh zona thần kinh có lây không?
+                  </a>
+                </p>
+              </div>
+              <!-- 7 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/nhi/vai-tro-cua-vitamin-trong-tang-cuong-mien-dich-va-tang-truong-o-tre-em/?link_type=related_posts">
+                    Vai trò của vitamin A trong tăng cường miễn dịch và tăng trưởng ở trẻ em
+                  </a>
+                </p>
+              </div>
+              <!-- 8 -->
+              <div class="DSachLquan" style="width: 90%; border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/tac-hai-khi-thua-hoac-thieu-vitamin/?link_type=related_posts">
+                    Tác hại khi thừa hoặc thiếu Vitamin A
+                  </a>
+                </p>
+              </div>
+              <!-- 9 -->
+              <div class="DSachLquan" style="width: 90%;">
+                <p style="margin: 10px 0px 10px 0px;"> 
+                  <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                  <a href="https://www.vinmec.com/tin-tuc/thong-tin-suc-khoe/nen-uong-vitamin-khi-nao/?link_type=related_posts">
+                    Nên uống vitamin A khi nào?
+                  </a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+    </main>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <footer class="ftco-footer">
+      <div class="container mb-5 pb-4">
+          <div class="row">
+              <div class="col-lg col-md-6">
+                  <div style="width: 350px;" class="ftco-footer-widget ">
+                      <h3 class="logo"><a style="text-decoration: none;" href="./../../HomePage/HomePage.html"><img src="./../../image/logo-footer.png"> Medicine-Foods</a></h3>
+                      <p>The website provides information about what to eat and do when you are sick.</p>
+                      <ul class="ftco-footer-social list-unstyled mt-4 ">
+                          <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                          <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Links</h2>
+                      <ul class="list-unstyled ">
+                          <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></i></li>
+                          <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/" target="_blank">Instagram</a></i></li>
+                          <li><i class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi" target="_blank">Twitter</a></i></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2 ">Services</h2>
+                      <div id="ServicesFooter">
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a  href="#" class="medicine" onclick="BuyMedicine();" >Buy-Medicine</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../contact/contact.html">Contact</a></i></li>
+                          <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="./../../gallery/gallery.html">Gallery</a></i></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 ">
+                <div class="ftco-footer-widget ">
+                    <h2 class="ftco-heading-2">Informations</h2>
+                    <ul class="list-unstyled ">
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097" target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+                      </li>
+                      <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+                      <li>
+                        <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                          <br>
+                          <a style="margin-left: 27px;"
+                            href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                            target="_blank">nhthanh.20it7@vku.udn.vn</a> 
+                        </i>
+                      </li>  
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- add js -->
+    <!-- <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      // var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      // for (i = 0; i < dots.length; i++) {
+      //     dots[i].className = dots[i].className.replace(" active", "");
+      // }
+      slides[slideIndex-1].style.display = "block";  
+      // dots[slideIndex-1].className += " active";
+      }
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./../../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+    <script src="VitaminE.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+</html>

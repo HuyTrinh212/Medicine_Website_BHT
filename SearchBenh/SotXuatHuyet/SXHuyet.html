@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        
+        <title>Medicine-Foods</title>
+        <link rel="stylesheet" href="./../../BootStrap 5.0/css 5.0/bootstrap.min.css">
+        <link rel="stylesheet" href="SXHuyet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./../../image/logo-footer.png" />
+    </head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div style="padding-top: 0px; padding-bottom: 0px;" class="container-fluid">
+              <!-- home -->
+              <div style="margin-left: 150px; display: flex;">
+                <div style="margin-top: 2px;">
+                  <a href="./../../HomePage/HomePage.html"><img style="padding-top: 5px;" src="./../../image/logo-footer.png" id="LogoHeader" width="74px" height="75px" alt=""></a>
+                </div>
+                <div>
+                  <h4 style="margin-top: 18px; color: rgb(190, 79, 0); margin-left: 9px; text-align: center; line-height: 24px;">
+                    <a style="text-decoration: none;" href="./../../HomePage/HomePage.html">Medicine-Foods</a><br>
+                    <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Sức khỏe của người việt</i></p>
+                  </h4>
+                </div>
+              </div>
+                <div style="margin-left: 250px;">
+                  <div style="height: auto; border-bottom: 0.1px solid black;">
+                    <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- contact -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./../../contact/contact.html"><b>Contact</b></a>
+                      </li>
+                      <!-- Review -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./../../gallery/gallery.html"><b>Gallery</b></a>
+                      </li>
+                      <!-- search -->
+                      <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                        <form class="d-flex" onsubmit="return redirect();">
+                          <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                          <button style="border-color: transparent;" class="btn btn-outline-success" type="submit"><i
+                              style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search"
+                              aria-hidden="true"></i></button>
+                        </form>
+                      </div>
+                    </ul>
+                  </div>
+                  <div style="height: auto;">
+                    <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- vitamin -->
+                      <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin A/VitaminA.html">Vitamin A</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin B/VitaminB.html">Vitamin B</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin C/VitaminC.html">Vitamin C</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin D/VitaminD.html">Vitamin D</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin E/VitaminE.html">Vitamin E</a></li>
+                          <li><a class="dropdown-item" href="./../../vitamin/vitamin K/VitaminK.html">Vitamin K</a></li>
+                        </ul>
+                      </li>
+                      <!-- minerals -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                        </a>
+                        <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./../../minerals/Axit folic/folic.html">Axit Folic</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/canxi/canxi.html">Canxi</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/sat Fe/Fe.html">Sắt - Fe</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/Kem Zn/Zn.html">Kẽm - Zn</a></li>
+                          <li><a class="dropdown-item" href="./../../minerals/Crom Cr/crom.html">Crôm - Cr</a></li>
+                        </ul>
+                      </li>
+                      <!-- buy medicine -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                          <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                        </a>
+                        <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Châu</a></li>
+                          <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang</a></li>
+                          <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Việt Hương</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Việt</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                          <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Hân</a></li>
+                          <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phương Chính</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- main -->
+    <main>
+    <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+    <img src="./../../image/top (1).png" onclick="toTop()" id="top">
+
+    <!-- IMG đầu của homepage -->
+    <div style="width: 100%;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <img class="img-responsive" src="./../../image/MuoiVan.png" width="100%" height="390px" alt="">
+            <div class="overlay">
+                <h1>DENGUE</h1>
+                <p style="text-align: center; margin-top: -50px;">
+                    Aedes aegypti, dân gian gọi là muỗi vằn, là một loài muỗi mang virus gây bệnh sốt Dengue, Chikungunya và sốt vàng da. Một nhóm nghiên cứu vừa đề nghị đổi tên A. aegypti thành Stegomyia aegypti, nhưng đề xuất này hiện chưa được giới khoa học công nhận rộng rãi.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- thanh xám -->
+    <div class="H3Div" style="width: 100%; display: flex; background-color: rgba(216, 216, 216, 0.651); height: 48px;">
+        <!-- là gì -->
+        <div style="margin-left: 31px;">
+            <h5><a href="#What">Sốt Xuất Huyết là gì?</a></h5>
+        </div>
+        <!-- dấu hiệu -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#DHieu">Dấu hiệu</a></h5>
+        </div>
+        <!-- Nên làm -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NLam">Nên làm</a></h5>
+        </div>
+        <!-- không nên làm -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NLam">Không nên làm</a></h5>
+        </div>
+        <!-- nên ăn -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NAn">Nên ăn</a></h5>
+        </div>
+        <!-- không nên ăn -->
+        <div style="margin-left: 40px;">
+            <h5><a href="#NAn">Không nên ăn</a></h5>
+        </div>
+        <!-- báo -->
+        <div style="margin-left: 250px;">
+            <h5 style="color: red;"><a style="color: red;" href="#ReadMore">TIN TỨC</a> <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
+          </div>   
+    </div>
+    <!-- nội dung -->
+    <div style="display: flex;">
+        <!-- bên trái -->
+        <div style="width: 72%; padding: 15px 22px 0px 40px; margin: 17px 0px 20px 0px; border-right: 0.5px solid rgba(134, 134, 134, 0.301);">
+            <!-- virut-corona là gì -->
+            <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Sốt xuất huyết là gì ?</strong></h5>
+            <p>
+                <strong style="color: rgb(219, 0, 0);">Sốt xuất huyết </strong> là bệnh truyền nhiễm do vi rút <strong style="color: rgb(219, 0, 0);"> Dengue </strong> gây ra, bệnh do muỗi Aedes aegypti hay còn gọi là muỗi vằn truyền nhiễm cho người. Bệnh có thể diễn tiến đến các biến chứng nguy hiểm và thậm chí tử vong. Hiện sốt xuất huyết là bệnh chưa có vắc-xin phòng ngừa và thuốc điều trị đặc hiệu.
+            </p>
+            <p>              
+                <strong style="color: rgb(219, 0, 0);">Sốt xuất huyết DenGue </strong> là bệnh truyền nhiễm gây dịch do vi rút <strong style="color: rgb(219, 0, 0);"> Dengue </strong> gây ra. Vi rút <strong style="color: rgb(219, 0, 0);"> Dengue </strong> có 4 tuýp huyết thanh là DEN-1, DEN-2, DEN-3 và DEN-4. Vi rút truyền từ người bệnh sang người lành do muỗi đốt. Muỗi Aedes aegypti là côn trùng trung gian truyền bệnh chủ yếu.
+                Đặc điểm của <strong style="color: rgb(219, 0, 0);">Sốt xuất huyết DenGue </strong> là sốt, xuất huyết và thoát huyết tương, có thể dẫn đến sốc giảm thể tích tuần hoàn, rối loạn đông máu, suy tạng, nếu không được chẩn đoán sớm và xử trí kịp thời dễ dẫn đến tử vong.
+            </p>
+            <p>
+                Có thể nói <strong style="color: rgb(219, 0, 0);"> Dengue </strong> là một bệnh do virus lây truyền do muỗi thường gặp nhất ở người. Trong những năm gần đây bệnh đã trở thành mối quan ngại lớn đối với sức khỏe cộng đồng trên bình diện quốc tế. Trên toàn thế giới có khoảng 2,5 tỷ người hiện đang sống trong vùng có lưu hành bệnh. Sự lan tràn về mặt địa lý của cả véc tơ truyền bệnh (muỗi) và virus đã đưa đến sự tăng cao tỷ lệ bệnh trong vòng 25 năm qua cũng như khả năng xuất hiện dịch do nhiều chủng huyết thanh khác nhau ở các đô thị trong vùng nhiệt đới.
+            </p>
+            <!-- 1 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">1. Bệnh xảy ra ở đâu? </strong><br>
+            <p>
+                <strong style="color: rgb(219, 0, 0);">Sốt xuất huyết </strong> chủ yếu lây truyền qua muỗi Aedes aegypti và thường phân bố ở các quốc gia vùng nhiệt đới. Dịch bệnh <strong style="color: rgb(219, 0, 0);">Sốt xuất huyết </strong> có thể xảy ra bất cứ khi nào. Tuy nhiên, độ ẩm và nhiệt độ cao là điều kiện thuận lợi cho sự sinh sôi, phát triển của muỗi, làm tăng khả năng lây truyền bệnh. Tại Việt Nam, bệnh xảy ra quanh năm, thường gia tăng vào mùa mưa. Bệnh gặp ở cả trẻ em và người lớn.
+            </p>
+            <p>
+                Tỉ lệ mắc bệnh trên toàn thế giới đã gia tăng mạnh mẽ trong những năm gần đây. Bệnh này hiện đã trở thành dịch tại trên 100 quốc gia ở châu Phi, châu Mỹ, khu vực phía Đông Địa Trung Hải, Đông Nam Á và Tây Thái Bình Dương. Đông Nam Á và Tây Thái Bình Dương là khu vực chịu ảnh hưởng nặng nề nhất. Trước năm 1970, chỉ có 9 quốc gia có dịch lưu hành. Con số này tăng lên gấp hơn 4 lần vào năm 1995. Tổ chức Y tế Thế giới (WHO) ước tính mỗi năm có khoảng 50 đến 100 triệu người mắc bệnh. Không chỉ có số trường hợp mắc bệnh gia tăng mà khả năng nhiễm nhiều loại virus khác nhau cũng ngày càng đáng báo động. Sau đây là một vài con số thống kê khác :
+            </p>
+            <img style="margin: 10px 0px 30px 40px; border-radius: 10px;" src="./../../image/sotxuathuyet1.jpg" width="90%" alt=""> <br>
+            
+            <!-- 2 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">2. NGUYÊN NHÂN MẮC BỆNH SỐT XUẤT HUYẾT. </strong><br>
+            <p>
+                Người nhiễm virus <strong style="color: rgb(219, 0, 0);"> DenGue </strong> do muỗi cái thuộc chi Aedes đốt. Muỗi Aedes aegypti là véc tơ truyền bệnh chủ yếu ở hầu hết các khu vực bệnh lưu hành. Muỗi Aedes aegypti hoạt động vào ban ngày và chỉ có muỗi cái mới đốt người và truyền bệnh. Khi muỗi cái Aedes hút máu bệnh nhân nhiễm virus dengue, virus này sẽ ủ bệnh trong cơ thể muỗi khoảng 8 đến 11 ngày. Trong khoảng thời gian sống còn lại sau đó, muỗi có nguy cơ truyền bệnh cho người. Khi virus vào cơ thể người, chúng tuần hoàn trong máu từ 2 đến 7 ngày. Trong khoảng thời gian này nếu muỗi Aedes hút máu thì virus được truyền cho muỗi.
+            </p>
+
+            <!-- 3 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">3. Bệnh sốt xuất huyết nguy hiểm như thế nào? </strong><br>
+            <p>
+                Cho đến nay, <strong style="color: rgb(219, 0, 0);"> sốt xuất huyết </strong> chưa có thuốc điều trị đặc hiệu và chưa có vắc xin phòng bệnh. Bệnh thường gây dịch lớn với nhiều người mắc cùng một lúc khiến công tác điều trị hết sức khó khăn, có thể gây tử vong, đặc biệt là với trẻ em, gây thiệt hại lớn về kinh tế, xã hội. Hơn 85% các ca mắc sốt xuất huyết dengue và 90% trường hợp tử vong xảy ra ở các tỉnh phía Nam Việt Nam. Trong đó, 90% các ca tử vong do sốt xuất huyết là dưới 15 tuổi.
+
+                Bệnh <strong style="color: rgb(219, 0, 0);"> sốt xuất huyết </strong> do virus <strong style="color: rgb(219, 0, 0);"> DenGue </strong> gây ra với 4 tuýp, ký hiệu là D1, D2, D3, D4. Cả 4 tuýp virus này đều có khả năng gây bệnh ở Việt Nam và luân phiên gây ra dịch bệnh. Miễn dịch được tạo thành sau khi mắc bệnh chỉ đặc hiệu đối với từng tuýp riêng lẻ, vì vậy có thể hiểu rằng: một người có thể mắc sốt xuất huyết 4 lần trong đời với 4 tuýp virus khác nhau.
+            </p>
+            <img style="margin: 10px 0px 30px 40px; border-radius: 10px;" src="./../../image/sotxuathuyet2.jpg" width="90%" alt=""> <br>
+
+            <!-- 4 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">4. Hướng dẫn phòng bệnh. </strong><br>
+            <ul style="margin-top: 5px;">
+                <li>Tránh muỗi đốt: Ngủ màn, không để trẻ chơi ở chỗ tối, thoa kem chống muỗi.</li>
+                <li>Diệt muỗi và loăng quăng: nhà cửa luôn thoáng mát, sạch sẽ ngăn nắp. Không để các dụng cụ chứa nước hoặc nếu có phải đậy nắp và thường xuyên thay rửa, loại bỏ các ổ nước đọng.</li>
+                <li>Ngoài những hướng dẫn trên, bạn hãy lưu ý luôn theo dõi sát thân nhiệt, báo ngay cho bác sĩ nếu nhận thấy dấu hiệu sốt lên, tuyệt đối không tự ý dùng thuốc chưa có sự chỉ định của bác sĩ.</li>
+            </ul>
+            <p>
+                Khoa nhi tại hệ thống Bệnh viện Đa khoa Quốc tế Vinmec là địa chỉ tiếp nhận và thăm khám các bệnh lý mà trẻ sơ sinh cũng như trẻ nhỏ dễ mắc phải: Sốt virus, sốt vi khuẩn, viêm tai giữa, viêm phổi ở trẻ,....Với trang thiết bị hiện đại, không gian vô trùng, giảm thiểu tối đa tác động cũng như nguy cơ lây lan bệnh. Cùng với đó là sự tận tâm từ các bác sĩ giàu kinh nghiệm chuyên môn với các bệnh nhi, giúp việc thăm khám không còn là nỗi trăn trở của các bậc cha mẹ.
+            </p>
+        
+            <!-- dấu hiệu -->
+            <h5 id="DHieu" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Dấu hiệu</strong></h5>
+            <!-- 1 -->
+            <strong style="color: rgba(0, 155, 182, 0.911); font-size: 21px; font-weight: 600;">1. Phân loại các mức độ của sốt xuất huyết. </strong><br>
+            Bệnh <strong style="color: rgb(219, 0, 0);"> sốt xuất huyết </strong> được chia làm 3 mức độ (Theo Tổ chức Y tế Thế - WHO năm 2009):
+            <ol style="margin: 5px; color: blueviolet;">
+                <li>Sốt xuất huyết Dengue.</li>
+                <li>Sốt xuất huyết Dengue có dấu hiệu cảnh báo.</li>
+                <li>Sốt xuất huyết Dengue nặng (Sốc sốt xuất huyết Dengue).</li>
+            </ol>
+            <p style="margin-top: 10px;">
+                Bệnh <strong style="color: rgb(219, 0, 0);"> sốt xuất huyết </strong> có biểu hiện khá đa dạng, diễn biến nhanh chóng từ nhẹ đến nặng. Bệnh thường khởi phát đột ngột và diễn biến qua 3 giai đoạn: giai đoạn sốt, giai đoạn nguy hiểm và giai đoạn hồi phục.
+
+                Cần lưu ý giai đoạn sốt tương ứng với thể bệnh sốt xuất huyết Dengue thông thường, nếu đã chuyển qua giai đoạn nguy hiểm tức là đã chuyển qua mức độ của thể bệnh sốt xuất huyết có dấu hiệu cảnh báo và sốt xuất huyết Dengue nặng. Khi đó cần phải cho bệnh nhân nhập viện ngay vì có thể dẫn đến các biến chứng nguy hiểm. Phát hiện sớm bệnh và hiểu rõ những vấn đề lâm sàng trong từng giai đoạn của bệnh sẽ giúp chẩn đoán sớm, điều trị đúng và kịp thời, nhằm cứu sống người bệnh.
+            </p>
+            <strong style="color: rgba(41, 34, 34, 0.911); font-size: 21px; font-weight: 700;">Giai đoạn sốt. </strong><br>
+            <p>
+                Giai đoạn sốt sẽ xuất hiện sau thời gian ủ bệnh, kéo dài từ 4 đến 10 ngày sau khi bị muỗi mang mầm bệnh đốt.
+            </p>
+            <ul style="margin-top: -10px;">
+                <li>Bệnh nhân có dấu hiệu sốt cao đột ngột, liên tục 39 - 40 độ C, kéo dài 2 - 7 ngày, khó hạ sốt.</li>
+                <li>Đau đầu dữ dội ở vùng trán, nhức hai hố mắt sau nhãn cầu.</li>
+                <li>Có thể có nổi mẩn, phát ban, da xung huyết.</li>
+                <li>Chán ăn, buồn nôn.</li>
+                <li>Đau cơ, đau khớp.</li>
+                <li>Nghiệm pháp dây thắt dương tính.</li>
+            </ul>
+            <img style="border-radius: 10px; margin: 0px 0px 0px 150px;" src="./../../image/sotxuathuyet3.jpg" width="70%" alt="">
+            <p style="text-align: center; font-size: 13px; color: rgb(20, 85, 110);">Sốt cao khó hạ là triệu chứng điển hình của sốt xuất huyết</p>
+            <strong style="color: rgba(41, 34, 34, 0.911); font-size: 21px; font-weight: 700;">Giai đoạn nguy hiểm. </strong><br>
+            <p>
+                Thường vào ngày thứ 3 - 7 của bệnh, người bệnh có thể còn sốt hoặc đã giảm sốt. Nhiệt độ giảm không nhất thiết có nghĩa là người bệnh đang hồi phục, ngược lại cần phải đặc biệt theo dõi biểu hiện của sốt xuất huyết dengue có dấu hiệu cảnh báo và tiến triển thành sốt xuất huyết <strong style="color: rgb(219, 0, 0);"> Dengue </strong> nặng.
+            </p>
+            <ul>
+                <li>Thoát huyết tương do tăng tính thấm thành mạch (thường kéo dài 24 - 48 giờ); tràn dịch màng phổi, mô kẽ, màng bụng, nề mi mắt, gan to, có thể đau. Nếu thoát huyết tương nhiều sẽ dẫn đến sốc với các biểu hiện vật vã, bứt rứt hoặc li bì, lạnh đầu chi, da lạnh ẩm, mạch nhanh nhỏ, huyết áp kẹt (hiệu số huyết áp tối đa và tối thiểu ≤ 25 mmHg), tụt huyết áp hoặc không đo được huyết áp, tiểu ít.</li>
+                <li>Xuất huyết: Xuất huyết dưới da, nốt xuất huyết rải rác hoặc chấm xuất huyết, thường ở mặt trước hai cẳng chân và mặt trong hai cánh tay, bụng, đùi, mạng sườn hoặc mảng bầm tím. Xuất huyết ở niêm mạc: Chảy máu mũi, lợi, tiểu ra máu. Kinh nguyệt kéo dài hoặc xuất hiện kinh sớm hơn kỳ hạn. Xuất huyết nội tạng như: Tiêu hóa, phổi, não là biểu hiện nặng (nôn/ói ra máu, đi cầu phân đen do bị xuất huyết nội tạng).</li>
+                <li>Một số trường hợp sốt xuất huyết dấu hiệu nặng có thể có biểu hiện suy tạng như: viêm gan nặng, viêm não, viêm cơ tim. Những biểu hiện nặng này có thể xảy ra ở người bệnh không có dấu hiệu thoát huyết tương rõ hoặc không sốc.</li>
+                <li>Đau bụng, buồn nôn, tay chân lạnh, vật vã hốt hoảng (đây là hội chứng choáng do xuất huyết nội tạng gây mất máu và tụt huyết áp), cần phải cấp cứu nhanh chóng.</li>
+            </ul>
+            <strong style="color: rgba(41, 34, 34, 0.911); font-size: 21px; font-weight: 700;">Giai đoạn hồi phục. </strong><br>
+            <p>
+                Khoảng 24 - 48 giờ sau giai đoạn nguy hiểm, cơ thể bệnh nhân có hiện tượng tái hấp thu dần dịch từ mô kẽ vào bên trong lòng mạch, giai đoạn này sẽ kéo dài trong khoảng 48 - 72 giờ.
+            </p>
+            <ul>
+                <li>Bệnh nhân hết sốt, tổng trạng tốt lên, thèm ăn uống trở lại, huyết động ổn định và đi tiểu nhiều.</li>
+                <li>Có thể có nhịp tim chậm và thay đổi về điện tâm đồ.</li>
+                <li>Trong giai đoạn này, nếu truyền dịch quá mức cho bệnh nhân có thể gây ra phù phổi hoặc suy tim.</li>
+            </ul>
+            <img style="border-radius: 10px; margin: 10px 0px 0px 45px;" src="./../../image/sotxuathuyet4.jpg" width="90%" alt="">
+            <p style="text-align: center; font-size: 14px; margin: 5px 0px 30px 0px;">Hình ảnh muỗi vằn</p>
+            <!-- nên làm k nên làm -->
+            <h5 id="NLam" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Nên làm và Không nên làm</strong></h5>
+            <div style="display: flex;">
+                <!-- nên -->
+                <div style="width: 49%; border-right: 0.5px solid black;">
+                    <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">NÊN LÀM</h3>
+                    <ul>
+                      <li>Dùng thuốc hạ nhiệt theo chỉ định của bác sĩ.</li>
+                      <li>Đến trung tâm y tế gần nhất.</li>
+                    </ul>
+                  </div>
+                <!-- ko nên -->
+                <div style="width: 49%;">
+                  <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">KHÔNG NÊN LÀM</h3>
+                  <ul>
+                    <li>Không tự ý dùng thuốc hạ sốt.</li>
+                    <li>Không ăn trứng khi bị sốt xuất huyết.</li>
+                    <li>Hạn chế muỗi tiếp xúc với da.</li>
+                  </ul>
+                </div>
+            </div>
+            <!-- nên ăn và khôgn nên ăn -->
+            <h5 id="NAn" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 31px; margin-top: 5px;"><strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">Nên ăn và không nên ăn</strong></h5>
+            <div style="display: flex;">
+              <!-- nên -->
+              <div style="width: 49%; border-right: 0.5px solid black;">
+                  <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">NÊN ĂN</h3>
+                  <ul>
+                    <li>Ăn một số đồ nhẹ, dễ nuốt, dễ tiêu hóa.</li>
+                    <li>Bù nước cho cơ thể liên tục.</li>
+                    <li>Ăn hoa quả và rau.</li>
+                  </ul>
+                </div>
+              <!-- ko nên -->
+              <div style="width: 49%;">
+                <h3 style="text-align: center; color: rgb(161, 131, 90); font-weight: 400;">KHÔNG NÊN ĂN</h3>
+                <ul>
+                  <li>Không ăn các thực phẩm có màu đen, nâu, đỏ.</li>
+                  <li>Không ăn đồ cay nóng.</li>
+                  <li>Không ăn uống đồ ngọt.</li>
+                  <li>Không ăn thực phẩm nhiều dầu mỡ.</li>
+                  <li>Không uống trà đặc, cà phê, hút thuốc, uống rượu.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <!-- bên phải -->
+        <div style="width: 26.5%; margin-top: 20px;">
+          <!-- liên quan 1 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cách ly triệt để, triển khai cao điểm rà soát tất cả người nhập cảnh.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 33px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 04/05/2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc1.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Phó Thủ tướng Vũ Đức Đam yêu cầu, phải cách ly triệt để, không được để lây nhiễm trong khu cách ly, từ khu cách ly ra cộng đồng...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 2 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 19px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">"Bỏ phố về quê" để tránh COVID-19 là phản khoa học, phản tác dụng.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 51px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 09/03/2020</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc2.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Theo chuyên gia y tế, di tản khi dịch COVID-19 đang diễn biến phức tạp không những gây khó khăn cho công tác kiểm soát...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 3 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cập nhật dịch Covid-19 ngày 22-5: 20 ca mới, hơn một nửa ở Bắc Giang.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 37px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 22-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc3.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Sáng 22-5, cả nước ghi nhận có thêm 20 ca mắc Covid-19 mới, trong đó hơn một nửa là ở Bắc Giang. Tuy nhiên có thể thấy, tốc độ tăng...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 4 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">11 mẫu xét nghiệm SARS-CoV-2 tại các ổ dịch Đà Nẵng là chủng virus Anh.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 21px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 19-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc4.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Đó là thông tin được bác sĩ Tôn Thất Thạnh, Giám đốc Trung tâm Kiểm soát bệnh tật (CDC) TP Đà Nẵng đưa ra tại cuộc họp Ban Chỉ đạo...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <!-- liên quan 5 -->
+          <div class="DivTinTuc1">
+            <h6 style="font-size: 15px; margin: 0px 0px 6px 14px;">
+              <b style="line-height: 20px;" class="HoverTinTuc">
+                <a style="text-decoration: none; color: black;" href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Thêm bốn ca nhiễm Covid-19, TP Hải Dương phát thông báo khẩn số 5.</a>
+                <i style="color: rgba(126, 59, 59, 0.884); font-size: 13px; margin: 0px 0px 0px 9px;"
+                class="fa fa-calendar" aria-hidden="true"> Ngày 20-05-2021</i>
+              </b>
+            </h6>
+            <div style="display: flex; margin-left: 5px;">
+              <div style="width: 36%; height: 81px;" class="IMG">
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img src="./../../image/covidTintuc5.jpg" width="100%" height="100%" alt=""></a>
+              </div>
+              <div style="width: 55%;">
+                <p style="font-size: 11.5px; margin-top: 4px;">Đêm 19-5, Ban Chỉ đạo phòng, chống dịch Covid-19 TP Hải Dương cho biết đã ghi nhận thêm bốn trường hợp dương tính với virus SARS-CoV-2...</p>
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: -14px; width: 91%; margin-left: 25px; height: 1.2px; color: rgba(100, 100, 100, 0.705);">
+
+          <hr style="width: 69%; margin: 0 auto; height: 5px; border-radius: 10px; color: rgb(14, 56, 6);">
+
+          <!-- tin tức liên quan -->
+          <div id="ReadMore" class="LienQuan">
+            <h6 class="hello" style="margin: 10px 0px 10px 16px; font-size: 20px;"><i class="fa fa-list-ul" aria-hidden="true"></i> <strong style="color: rgba(21, 21, 226, 0.822); font-weight: 500;"> Danh sách các bài viết liên quan.</strong> </h6>
+            <!-- 1 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Thêm 73 ca Covid-19, chủ yếu ở Bắc Giang, Bắc Ninh.
+                </a> 
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Một người bán quán ăn tại TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Người đàn ông 63 tuổi ở TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Một người bán quán ăn tại TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 5 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Thêm 109 ca Covid-19 trong nước, điểm nóng ở Bắc Giang.
+                </a> 
+              </p>
+            </div>
+            <!-- 6 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Hai con của người bán quán ăn ở TP HCM nghi mắc Covid-19.
+                </a> 
+              </p>
+            </div>
+            <!-- 7 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Đà Nẵng có thêm ca COVID mới trong ngày là F1.
+                </a> 
+              </p>
+            </div>
+            <!-- 8 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Ca nghi ngờ nhiễm COVID-19 ở Phú Nhuận có kết quả âm tính.
+                </a> 
+              </p>
+            </div>
+            <!-- 9 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  Trốn theo xe gom rác vào khu phong tỏa để thu nợ tiền rượu.
+                </a> 
+              </p>
+            </div>
+            <!-- 10 -->
+            <div class="DSachLquan" style="width: 90%; border-top: 0.5px solid rgba(175, 175, 175, 0.308); border-bottom: 0.5px solid rgba(175, 175, 175, 0.308);">
+              <p style="margin: 10px 0px 10px 0px; font-size: 16px;"> 
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/nhi/nhung-dieu-can-biet-neu-con-ban-muon-deo-kinh-ap-trong/?link_type=related_posts">
+                  TP.HCM: Khoanh vùng, lấy mẫu người dân trong chợ Phú Nhuận.
+                </a> 
+              </p>
+            </div>
+          </div>          
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <footer class="ftco-footer">
+        <div class="container mb-5 pb-4">
+            <div class="row">
+                <div class="col-lg col-md-6">
+                    <div style="width: 350px;" class="ftco-footer-widget ">
+                        <h3 class="logo"><a style="text-decoration: none;" href="./../../HomePage/HomePage.html"><img src="./../../image/logo-footer.png"> Medicine-Foods</a></h3>
+                        <p>The website provides information about what to eat and do when you are sick.</p>
+                        <ul class="ftco-footer-social list-unstyled mt-4 ">
+                            <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                    <div class="ftco-footer-widget ">
+                        <h2 class="ftco-heading-2 ">Links</h2>
+                        <ul class="list-unstyled ">
+                            <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></i></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/" target="_blank">Instagram</a></i></li>
+                            <li><i class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/?lang=vi" target="_blank">Twitter</a></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                    <div class="ftco-footer-widget ">
+                        <h2 class="ftco-heading-2 ">Services</h2>
+                        <div id="ServicesFooter">
+                          <ul class="list-unstyled">
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a  href="#" class="medicine" onclick="BuyMedicine();" >Buy-Medicine</a></i></li>
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="../contact/contact.html">Contact</a></i></li>
+                            <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="../gallery/gallery.html">Gallery</a></i></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 ">
+                  <div class="ftco-footer-widget ">
+                      <h2 class="ftco-heading-2">Informations</h2>
+                      <ul class="list-unstyled ">
+                        <li>
+                          <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a href="https://www.google.com/maps/place/335+Huy+C%E1%BA%ADn,+Khu%C3%AA+Trung,+C%E1%BA%A9m+L%E1%BB%87,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0319849,108.208121,17z/data=!4m13!1m7!3m6!1s0x314219926f7e7505:0xac6f993bf893e15d!2zMzM1IEh1eSBD4bqtbiwgS2h1w6ogVHJ1bmcsIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMA!3b1!8m2!3d16.0319849!4d108.2103097!3m4!1s0x314219926f7e7505:0xac6f993bf893e15d!8m2!3d16.0319849!4d108.2103097" target="_blank">335 Huy Cận, Phường Khuê Trung, Quận Cẩm Lệ, TP-Đà Nẵng, Việt Nam</a></i>
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+                        <li>
+                          <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                            <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">bhtrinh.20it7@vku.udn.vn</a>
+                            <br>
+                            <a style="margin-left: 27px;"
+                              href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                              target="_blank">nhthanh.20it7@vku.udn.vn</a>
+                            <br>
+                            <a style="margin-left: 14px;"
+                              href="https://mail.google.com/mail/u/1/#inbox/FMfcgxwLswLkFwhJxmbJHhTRhmvXQTMS?compose=new"
+                              target="_blank">nqnphuong.20it@vku.udn.vn</a>
+                              <br>
+                            <a style="margin-left: 44px;" href="https://mail.google.com/mail/u/1/#inbox" target="_blank">ttphuc.20it6@vku.udn.vn</a>   
+                          </i>
+                        </li>  
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </footer>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+      <!-- add js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./../../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+      <script src="SXHuyet.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+</html>
